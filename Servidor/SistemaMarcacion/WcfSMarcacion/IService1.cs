@@ -17,6 +17,9 @@ namespace WcfSMarcacion
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
+        [OperationContract]
+        BC.SCUsuarios BusquedaDeUsuario(string sNombre, string sClave);
+
         // TODO: agregue aquí sus operaciones de servicio
     }
 

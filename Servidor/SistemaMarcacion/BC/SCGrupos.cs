@@ -11,7 +11,7 @@ namespace BC
         private string _Nombre;
 
         public int CodigoGrupo { get { return _CodigoGrupo; } set { _CodigoGrupo = value; } }
-        public string Nombre { get { return _Nombre; } set { _Nombre = value} }
+        public string Nombre { get { return _Nombre; } set { _Nombre = value; } }
 
         public SCGrupos()
         {

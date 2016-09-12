@@ -1,5 +1,4 @@
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BGlobal\bin\Debug\BGlobal.dll
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BGlobal\bin\Debug\BGlobal.pdb
-E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BGlobal\obj\Debug\BGlobal.csprojResolveAssemblyReference.cache
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BGlobal\obj\Debug\BGlobal.dll
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BGlobal\obj\Debug\BGlobal.pdb

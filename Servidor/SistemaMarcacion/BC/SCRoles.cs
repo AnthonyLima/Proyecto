@@ -11,7 +11,7 @@ namespace BC
         private string _Nombre;
 
         public int CodigoRol { get { return _CodigoRol; } set { _CodigoRol = value; } }
-        public string Nombre { get { return _Nombre; } set { _Nombre = value} }
+        public string Nombre { get { return _Nombre; } set { _Nombre = value; } }
 
         public SCRoles()
         {

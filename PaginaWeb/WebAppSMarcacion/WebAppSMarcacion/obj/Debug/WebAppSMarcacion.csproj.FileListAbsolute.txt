@@ -1,0 +1,5 @@
+E:\ANTHONY\githubTrabajos\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\bin\WebAppSMarcacion.dll
+E:\ANTHONY\githubTrabajos\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\bin\WebAppSMarcacion.pdb
+E:\ANTHONY\githubTrabajos\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.csprojResolveAssemblyReference.cache
+E:\ANTHONY\githubTrabajos\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.dll
+E:\ANTHONY\githubTrabajos\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.pdb

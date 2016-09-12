@@ -10,6 +10,8 @@ namespace WcfSMarcacion
     // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "Service1" en el código y en el archivo de configuración a la vez.
     public class Service1 : IService1
     {
+        BL.BL_Usuarios BLUserTemp = new BL.BL_Usuarios();
+
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);
@@ -26,6 +28,11 @@ namespace WcfSMarcacion
                 composite.StringValue += "Suffix";
             }
             return composite;
+        }
+
+        public BC.SCUsuarios BusquedaDeUsuario(string sNombre, string sClave)
+        {
+            return BLUserTemp.BuscarUsuario(sNombre, sClave);
         }
     }
 }

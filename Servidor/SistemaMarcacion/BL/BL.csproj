@@ -39,10 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL_Usuarios.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BC\BC.csproj">
+      <Project>{49422072-6afb-4d0d-95be-ddcedde6a5f0}</Project>
+      <Name>BC</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DA\DA.csproj">
       <Project>{23a96e0a-4b32-4b59-8598-bff6a5ad2dc3}</Project>
       <Name>DA</Name>
