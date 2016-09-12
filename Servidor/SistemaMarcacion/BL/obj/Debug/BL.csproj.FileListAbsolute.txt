@@ -1,0 +1,5 @@
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\BL.dll
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\BL.pdb
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.dll
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.pdb

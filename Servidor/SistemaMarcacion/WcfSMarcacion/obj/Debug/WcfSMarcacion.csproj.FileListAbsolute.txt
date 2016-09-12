@@ -1,0 +1,6 @@
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\bin\Debug\WcfSMarcacion.dll.config
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\bin\Debug\WcfSMarcacion.dll
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\bin\Debug\WcfSMarcacion.pdb
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\obj\Debug\WcfSMarcacion.csprojResolveAssemblyReference.cache
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\obj\Debug\WcfSMarcacion.dll
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\obj\Debug\WcfSMarcacion.pdb

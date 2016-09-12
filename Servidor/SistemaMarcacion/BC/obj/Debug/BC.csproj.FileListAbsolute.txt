@@ -1,0 +1,5 @@
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BC\bin\Debug\BC.dll
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BC\bin\Debug\BC.pdb
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BC\obj\Debug\BC.csprojResolveAssemblyReference.cache
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BC\obj\Debug\BC.dll
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BC\obj\Debug\BC.pdb
