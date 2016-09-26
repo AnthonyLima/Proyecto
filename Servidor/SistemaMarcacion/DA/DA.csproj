@@ -40,6 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Da.cs" />
+    <Compile Include="DAGlobal.cs" />
+    <Compile Include="DAVMEntidad.cs" />
+    <Compile Include="DAVMHora.cs" />
+    <Compile Include="DAVMHorario.cs" />
+    <Compile Include="DAVMHorarioGeneral.cs" />
+    <Compile Include="DAVMMarcacion.cs" />
+    <Compile Include="DAVMPermiso.cs" />
+    <Compile Include="DAVMTrabajador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

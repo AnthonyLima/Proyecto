@@ -55,6 +55,7 @@
     <Compile Include="VMHorarioGeneral.cs" />
     <Compile Include="VMIdentificador.cs" />
     <Compile Include="VMMarcacion.cs" />
+    <Compile Include="VMPermiso.cs" />
     <Compile Include="VMTrabajador.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
