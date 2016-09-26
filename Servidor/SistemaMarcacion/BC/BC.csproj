@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GTabla.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SCAplicaciones.cs" />
     <Compile Include="SCGrupos.cs" />
@@ -48,6 +49,13 @@
     <Compile Include="SCPermisos.cs" />
     <Compile Include="SCRoles.cs" />
     <Compile Include="SCUsuarios.cs" />
+    <Compile Include="VMEntidad.cs" />
+    <Compile Include="VMHora.cs" />
+    <Compile Include="VMHorario.cs" />
+    <Compile Include="VMHorarioGeneral.cs" />
+    <Compile Include="VMIdentificador.cs" />
+    <Compile Include="VMMarcacion.cs" />
+    <Compile Include="VMTrabajador.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

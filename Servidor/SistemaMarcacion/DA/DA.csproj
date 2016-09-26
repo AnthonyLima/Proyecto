@@ -47,6 +47,10 @@
       <Project>{49422072-6afb-4d0d-95be-ddcedde6a5f0}</Project>
       <Name>BC</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BGlobal\BGlobal.csproj">
+      <Project>{6c453b2f-16d8-4b94-9359-30bfb365f8ac}</Project>
+      <Name>BGlobal</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
