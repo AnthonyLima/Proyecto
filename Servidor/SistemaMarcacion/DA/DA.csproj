@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Da.cs" />
-    <Compile Include="DAGlobal.cs" />
+    <Compile Include="DAGTabla.cs" />
     <Compile Include="DAVMEntidad.cs" />
     <Compile Include="DAVMHora.cs" />
     <Compile Include="DAVMHorario.cs" />
