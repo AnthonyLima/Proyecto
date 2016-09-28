@@ -10,7 +10,7 @@ namespace DA
     {
         private BGlobal.Global Conect = new BGlobal.Global();
 
-        public DataTable PCTrabajadorPorCodigoTrabajador(int sCodigoTrabajador)
+        public DataTable PCTrabajadorPorCodigoTrabajador(int sCodigoTrabajador = 0)
         {
             DataTable dTabla = new DataTable();
 
