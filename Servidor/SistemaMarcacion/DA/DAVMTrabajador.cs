@@ -25,6 +25,21 @@ namespace DA
             return dTabla;
         }
 
+        public DataTable PCTrabajadorPorCodigoCategoria(int sCodigoCategoria)
+        {
+            DataTable dTabla = new DataTable();
+
+            int Cantidad = 1;
+            string[] Campos = new string[Cantidad];
+            Campos[0] = "CodigoCategoria";
+            object[] Objetos = new object[Cantidad];
+            Objetos[0] = sCodigoCategoria;
+
+            dTabla = Conect.Consulta("MPCTrabajadorPorCodigoCategoria", Campos, Objetos);
+
+            return dTabla;
+        }
+
         public bool PITrabajador(BC.VMTrabajador sVMTrabajador)
         {
             bool temp = false;

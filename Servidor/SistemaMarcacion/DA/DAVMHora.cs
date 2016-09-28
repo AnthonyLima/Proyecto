@@ -10,6 +10,21 @@ namespace DA
     {
         private BGlobal.Global conect = new BGlobal.Global();
 
+        public DataTable PCHora(int sCodigoHora)
+        {
+            DataTable dTabla = new DataTable();
+
+            int Cantidad = 1;
+            string[] Campos = new string[Cantidad];
+            Campos[0] = "CodigoHora";
+            object[] Objetos = new object[Cantidad];
+            Objetos[0] = sCodigoHora;
+
+            dTabla = conect.Consulta("MPCHora", Campos, Objetos);
+
+            return dTabla;
+        }
+
         public bool PIHora(BC.VMHora sVMHora)
         {
             bool temp = false;
