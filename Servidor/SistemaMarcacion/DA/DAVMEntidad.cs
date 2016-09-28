@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 
 namespace DA
 {
@@ -9,7 +10,22 @@ namespace DA
     {
         private BGlobal.Global Conect = new BGlobal.Global();
 
-        public bool IngresoEntidad(BC.VMEntidad sVMEntidad)
+        public DataTable PCEntidadPorDocumentoIdentidad(string sDocumentoIdentidad)
+        {
+            DataTable dTabla = new DataTable();
+
+            int Cantidad = 1;
+            string[] Campos = new string[Cantidad];
+            Campos[0] = "DocumentoIdentidad";
+            object[] Objetos = new object[Cantidad];
+            Objetos[0] = sDocumentoIdentidad;
+
+            dTabla = Conect.Consulta("MPCEntidadPorDocumentoIdentidad", Campos, Objetos);
+
+            return dTabla;
+        }
+
+        public bool PIEntidad(BC.VMEntidad sVMEntidad)
         {
             bool temp = false;
 
@@ -34,7 +50,7 @@ namespace DA
             return temp;
         }
 
-        public bool ActualizarEntidad(BC.VMEntidad sVMEntidad)
+        public bool PUEntidad(BC.VMEntidad sVMEntidad)
         {
             bool temp = false;
 
@@ -59,7 +75,7 @@ namespace DA
             return temp;
         }
 
-        public bool EliminarEntidad(string sDocumentoIdentidad)
+        public bool PDEntidad(string sDocumentoIdentidad)
         {
             bool temp = false;
 

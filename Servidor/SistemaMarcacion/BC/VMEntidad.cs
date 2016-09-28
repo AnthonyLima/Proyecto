@@ -13,6 +13,7 @@ namespace BC
         private string _ApellidoMaterno;
         private string _Telefono;
         private string _Email;
+        private DateTime _FechaIngreso;
 
         public string DocumentoIdentidad { get { return _DocumentoIdentidad; } set { _DocumentoIdentidad = value; } }
         public string Nombres { get { return _Nombres; } set { _Nombres = value; } }
@@ -20,6 +21,7 @@ namespace BC
         public string ApellidoMaterno { get { return _ApellidoMaterno; } set { _ApellidoMaterno = value; } }
         public string Telefono { get { return _Telefono; } set { _Telefono = value; } }
         public string Email { get { return _Email; } set { _Email = value; } }
+        public DateTime FechaIngreso { get { return _FechaIngreso; } set { _FechaIngreso = value; } }
 
         public VMEntidad()
         {
@@ -29,6 +31,7 @@ namespace BC
             ApellidoMaterno = string.Empty;
             Telefono = string.Empty;
             Email = string.Empty;
+            FechaIngreso = DateTime.Now;
         }
     }
 }

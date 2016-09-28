@@ -45,7 +45,7 @@ namespace DA
             return temp;
         }
 
-        public bool EliminarGTabla(string sTabla, string sCodigo)
+        public bool EliminarGTabla(string sTabla, string sCodigo = "")
         {
             bool temp = false;
 
