@@ -31,6 +31,29 @@ namespace DA
             return temp;
         }
 
+        public bool PUHorario(BC.VMHorario sVMHorario)
+        {
+            bool temp = false;
+
+            int Cantidad = 5;
+            string[] Campos = new string[Cantidad];
+            Campos[0] = "CodigoHorario";
+            Campos[1] = "CodigoTrabajador";
+            Campos[2] = "CodigoHistorial";
+            Campos[3] = "FechaInicio";
+            Campos[4] = "FechaFin";
+            object[] Objetos = new object[Cantidad];
+            Objetos[0] = sVMHorario.CodigoHorario;
+            Objetos[1] = sVMHorario.CodigoTrabajador;
+            Objetos[2] = sVMHorario.CodigoHistorial;
+            Objetos[3] = sVMHorario.FechaInicio;
+            Objetos[4] = sVMHorario.FechaFin;
+
+            temp = conect.IDU("MPIHorario", Campos, Objetos);
+
+            return temp;
+        }
+
         public bool PDHorario(int sCodigoHorario,int sCodigoTrabajador,int sCodigoHistorial)
         {
             bool temp = false;
