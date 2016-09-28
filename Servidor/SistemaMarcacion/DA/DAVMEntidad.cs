@@ -37,15 +37,15 @@ namespace DA
             Campos[3] = "ApellidoMaterno";
             Campos[4] = "Telefono";
             Campos[5] = "Email";
-            object[] objetos = new object[Cantidad];
-            objetos[0] = sVMEntidad.DocumentoIdentidad;
-            objetos[1] = sVMEntidad.Nombres;
-            objetos[2] = sVMEntidad.ApellidoPaterno;
-            objetos[3] = sVMEntidad.ApellidoMaterno;
-            objetos[4] = sVMEntidad.Telefono;
-            objetos[5] = sVMEntidad.Email;
+            object[] Objetos = new object[Cantidad];
+            Objetos[0] = sVMEntidad.DocumentoIdentidad;
+            Objetos[1] = sVMEntidad.Nombres;
+            Objetos[2] = sVMEntidad.ApellidoPaterno;
+            Objetos[3] = sVMEntidad.ApellidoMaterno;
+            Objetos[4] = sVMEntidad.Telefono;
+            Objetos[5] = sVMEntidad.Email;
 
-            temp = Conect.IDU("MPIEntidad", Campos, objetos);
+            temp = Conect.IDU("MPIEntidad", Campos, Objetos);
 
             return temp;
         }
@@ -62,15 +62,15 @@ namespace DA
             Campos[3] = "ApellidoMaterno";
             Campos[4] = "Telefono";
             Campos[5] = "Email";
-            object[] objetos = new object[Cantidad];
-            objetos[0] = sVMEntidad.DocumentoIdentidad;
-            objetos[1] = sVMEntidad.Nombres;
-            objetos[2] = sVMEntidad.ApellidoPaterno;
-            objetos[3] = sVMEntidad.ApellidoMaterno;
-            objetos[4] = sVMEntidad.Telefono;
-            objetos[5] = sVMEntidad.Email;
+            object[] Objetos = new object[Cantidad];
+            Objetos[0] = sVMEntidad.DocumentoIdentidad;
+            Objetos[1] = sVMEntidad.Nombres;
+            Objetos[2] = sVMEntidad.ApellidoPaterno;
+            Objetos[3] = sVMEntidad.ApellidoMaterno;
+            Objetos[4] = sVMEntidad.Telefono;
+            Objetos[5] = sVMEntidad.Email;
 
-            temp = Conect.IDU("MPUEntidad", Campos, objetos);
+            temp = Conect.IDU("MPUEntidad", Campos, Objetos);
 
             return temp;
         }
@@ -82,10 +82,10 @@ namespace DA
             int Cantidad = 1;
             string[] Campos = new string[Cantidad];
             Campos[0] = "DocumentoIdentidad";
-            object[] objetos = new object[Cantidad];
-            objetos[0] = sDocumentoIdentidad;
+            object[] Objetos = new object[Cantidad];
+            Objetos[0] = sDocumentoIdentidad;
 
-            temp = Conect.IDU("MPDEntidad", Campos, objetos);
+            temp = Conect.IDU("MPDEntidad", Campos, Objetos);
 
             return temp;
         }

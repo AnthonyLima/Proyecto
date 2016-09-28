@@ -14,7 +14,7 @@ namespace DA
         {
             bool temp = false;
 
-            int Cantidad = 1;
+            int Cantidad = 4;
             string[] Campos = new string[Cantidad];
             Campos[0] = "CodigoHorario";
             Campos[1] = "CodigoTrabajador";
@@ -27,6 +27,25 @@ namespace DA
             Objetos[3] = sVMHorario.FechaFin;
 
             temp = conect.IDU("MPIHorario", Campos, Objetos);
+
+            return temp;
+        }
+
+        public bool PDHorario(int sCodigoHorario,int sCodigoTrabajador,int sCodigoHistorial)
+        {
+            bool temp = false;
+
+            int Cantidad = 3;
+            string[] Campos = new string[Cantidad];
+            Campos[0] = "CodigoHorario";
+            Campos[1] = "CodigoTrabajador";
+            Campos[2] = "CodigoHistorial";
+            object[] Objetos = new object[Cantidad];
+            Objetos[0] = sCodigoHorario;
+            Objetos[1] = sCodigoTrabajador;
+            Objetos[2] = sCodigoHistorial;
+
+            temp = conect.IDU("MPDHorario", Campos, Objetos);
 
             return temp;
         }
