@@ -1,0 +1,15 @@
+﻿body {
+    
+}
+#CabeceraPagina {
+    height:80px;
+}
+#OpcionesPagina {
+    height:35px;
+}
+#CuerpoPagina {
+    height:auto;
+}
+#PiePagina {
+    height:50px;
+}

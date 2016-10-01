@@ -59,6 +59,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="default.aspx" />
+    <Content Include="Estilo\EstiloCabeceraPag.css" />
     <Content Include="Service References\WcfSMarcacion\configuration91.svcinfo" />
     <Content Include="Service References\WcfSMarcacion\configuration.svcinfo" />
     <Content Include="Service References\WcfSMarcacion\Reference.svcmap">
@@ -69,6 +71,13 @@
     <Content Include="WebFormSUsuario.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\WcfSMarcacion\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -115,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\WcfSMarcacion\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagen\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
