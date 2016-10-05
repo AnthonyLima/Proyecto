@@ -7,3 +7,14 @@ E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\DA.pdb
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.dll
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.pdb
+D:\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\BL.dll
+D:\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\BL.pdb
+D:\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\BC.dll
+D:\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\DA.dll
+D:\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\BGlobal.dll
+D:\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\BC.pdb
+D:\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\DA.pdb
+D:\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\BGlobal.pdb
+D:\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+D:\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.dll
+D:\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.pdb

@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -61,12 +62,13 @@
   <ItemGroup>
     <Content Include="default.aspx" />
     <Content Include="Estilo\EstiloCabeceraPag.css" />
-    <Content Include="Service References\WcfSMarcacion\configuration91.svcinfo" />
-    <Content Include="Service References\WcfSMarcacion\configuration.svcinfo" />
-    <Content Include="Service References\WcfSMarcacion\Reference.svcmap">
+    <Content Include="PaginaCuerpo\WebLogin.aspx" />
+    <None Include="Service References\WcfSMarcacion\configuration91.svcinfo" />
+    <None Include="Service References\WcfSMarcacion\configuration.svcinfo" />
+    <None Include="Service References\WcfSMarcacion\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
+    </None>
     <Content Include="Web.config" />
     <Content Include="WebFormSUsuario.aspx" />
   </ItemGroup>
@@ -77,6 +79,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaCuerpo\WebLogin.aspx.cs">
+      <DependentUpon>WebLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaCuerpo\WebLogin.aspx.designer.cs">
+      <DependentUpon>WebLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\WcfSMarcacion\Reference.cs">
@@ -96,7 +105,7 @@
     <None Include="Service References\WcfSMarcacion\BC.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Service References\WcfSMarcacion\service.wsdl" />
+    <None Include="Service References\WcfSMarcacion\service.wsdl" />
     <None Include="Service References\WcfSMarcacion\service.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -127,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Imagen\" />
+    <Folder Include="PaginaOpciones\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

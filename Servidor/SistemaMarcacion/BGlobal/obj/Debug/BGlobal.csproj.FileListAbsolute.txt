@@ -2,3 +2,7 @@ E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BGlobal\bin\Debug\B
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BGlobal\bin\Debug\BGlobal.pdb
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BGlobal\obj\Debug\BGlobal.dll
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BGlobal\obj\Debug\BGlobal.pdb
+D:\Proyecto\Servidor\SistemaMarcacion\BGlobal\bin\Debug\BGlobal.dll
+D:\Proyecto\Servidor\SistemaMarcacion\BGlobal\bin\Debug\BGlobal.pdb
+D:\Proyecto\Servidor\SistemaMarcacion\BGlobal\obj\Debug\BGlobal.dll
+D:\Proyecto\Servidor\SistemaMarcacion\BGlobal\obj\Debug\BGlobal.pdb

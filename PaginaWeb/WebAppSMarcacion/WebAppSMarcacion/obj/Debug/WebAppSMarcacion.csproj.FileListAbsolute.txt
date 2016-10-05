@@ -3,3 +3,9 @@ E:\ANTHONY\githubTrabajos\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\b
 E:\ANTHONY\githubTrabajos\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.csprojResolveAssemblyReference.cache
 E:\ANTHONY\githubTrabajos\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.dll
 E:\ANTHONY\githubTrabajos\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.pdb
+D:\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\bin\WebAppSMarcacion.dll.config
+D:\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\bin\WebAppSMarcacion.dll
+D:\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\bin\WebAppSMarcacion.pdb
+D:\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.csprojResolveAssemblyReference.cache
+D:\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.dll
+D:\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.pdb

@@ -5,3 +5,12 @@ E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\DA\bin\Debug\BC.pdb
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\DA\obj\Debug\DA.csprojResolveAssemblyReference.cache
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\DA\obj\Debug\DA.dll
 E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\DA\obj\Debug\DA.pdb
+D:\Proyecto\Servidor\SistemaMarcacion\DA\bin\Debug\DA.dll
+D:\Proyecto\Servidor\SistemaMarcacion\DA\bin\Debug\DA.pdb
+D:\Proyecto\Servidor\SistemaMarcacion\DA\bin\Debug\BC.dll
+D:\Proyecto\Servidor\SistemaMarcacion\DA\bin\Debug\BGlobal.dll
+D:\Proyecto\Servidor\SistemaMarcacion\DA\bin\Debug\BC.pdb
+D:\Proyecto\Servidor\SistemaMarcacion\DA\bin\Debug\BGlobal.pdb
+D:\Proyecto\Servidor\SistemaMarcacion\DA\obj\Debug\DA.csprojResolveAssemblyReference.cache
+D:\Proyecto\Servidor\SistemaMarcacion\DA\obj\Debug\DA.dll
+D:\Proyecto\Servidor\SistemaMarcacion\DA\obj\Debug\DA.pdb
