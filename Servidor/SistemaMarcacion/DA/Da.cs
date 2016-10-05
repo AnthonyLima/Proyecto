@@ -29,7 +29,7 @@ namespace DA
 
             if(dtTemp.Rows.Count > 0)
             {
-                tempUsuario.CodigoUsuario = int.Parse(dtTemp.Rows[0]["CodigoUsuario"].ToString());
+                tempUsuario.CodigoUsuario = int.Parse(dtTemp.Rows[0]["CodigoUsuarios"].ToString());
                 tempUsuario.Nombre = dtTemp.Rows[0]["Nombre"].ToString();
                 tempUsuario.Clave = dtTemp.Rows[0]["Clave"].ToString();
             }
