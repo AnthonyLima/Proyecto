@@ -33,7 +33,6 @@ namespace DA
                 tempUsuario.Nombre = dtTemp.Rows[0]["Nombre"].ToString();
                 tempUsuario.Clave = dtTemp.Rows[0]["Clave"].ToString();
             }
-
             return tempUsuario;
         }
         #endregion
