@@ -6,8 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="../Estilo/EstiloContenidoPag.css" rel="stylesheet" />
 </head>
-<body>
+<body style="height:auto;width:auto;text-align:center;">
     <form id="form1" runat="server">
     <div>
     <div>

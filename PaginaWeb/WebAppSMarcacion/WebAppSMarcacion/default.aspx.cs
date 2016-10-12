@@ -9,9 +9,10 @@ namespace WebAppSMarcacion
 {
     public partial class _default : System.Web.UI.Page
     {
+        string nombrePagina = "PaginaContenido/WebLogin.aspx";
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            PagContent.Controls.Add(new LiteralControl("<iframe src=\"" +nombrePagina +"\"></iframe><br />"));
         }
     }
 }

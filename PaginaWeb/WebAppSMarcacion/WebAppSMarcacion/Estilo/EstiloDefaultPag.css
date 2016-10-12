@@ -1,0 +1,24 @@
+﻿body {
+    
+}
+#CabeceraPagina {
+    height:80px;
+    width:auto;
+    background-color:blue;
+}
+#OpcionesPagina {
+    height:35px;
+    width:auto;
+    background-color:orange;
+}
+#ContenidoPagina {
+    height:auto;
+    width:auto;
+    text-align:center;
+    background-color:green;
+}
+#PiePagina {
+    height:50px;
+    width:auto;
+    background-color:yellow;
+}

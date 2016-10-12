@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link href="Estilo/EstiloCabeceraPag.css" rel="stylesheet" type="text/css" />
+    <link href="Estilo/EstiloDefaultPag.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -16,8 +16,9 @@
         <div id="OpcionesPagina">
 
         </div>
-        <div id="CuerpoPagina">
-            <iframe src="PaginaCuerpo/WebLogin.aspx"></iframe>
+        <div id="ContenidoPagina">
+            <%--<iframe src="PaginaContenido/WebLogin.aspx"></iframe>--%>
+            <asp:PlaceHolder ID="PagContent" runat="server" />
         </div>
         <div id="PiePagina">
 
