@@ -14,17 +14,19 @@
             
         </div>
         <div id="OpcionesPagina">
-            <%--<asp:Menu ID="IngresoMenu" runat="server" Orientation="Horizontal">
+            <asp:Menu runat="server" Orientation="Horizontal">
                 <Items>
-                    
+                    <asp:MenuItem Text="empleados"></asp:MenuItem>
+                    <asp:MenuItem Text="Recursos Humanos"></asp:MenuItem>
+                    <asp:MenuItem Text="Administracion"></asp:MenuItem>
+                    <asp:MenuItem Text="Informacion"></asp:MenuItem>
                 </Items>
-            </asp:Menu>--%>
-            <asp:Panel ID="PanelOpciones" runat="server"></asp:Panel>
+            </asp:Menu> 
         </div>
         <div id="ContenidoPagina">
             <%--<iframe src="PaginaContenido/WebLogin.aspx"></iframe>--%>
             <%--<asp:PlaceHolder ID="PagContent" runat="server" />--%>
-            <asp:Panel ID="PanelContent" runat="server"></asp:Panel>
+            <asp:Panel ID="PanelContent" runat="server" Height="100%" Width="100%" HorizontalAlign="Center" BorderStyle="Solid"></asp:Panel>
         </div>
         <div id="PiePagina">
 

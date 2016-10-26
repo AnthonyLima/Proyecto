@@ -1,24 +1,29 @@
 ﻿body {
     
 }
+MenuItem {
+    margin-left:100px;
+    margin-right:100px;
+}
+
 #CabeceraPagina {
     height:80px;
     width:auto;
-    background-color:blue;
+    background-color:gray;
 }
 #OpcionesPagina {
     height:35px;
     width:auto;
-    background-color:orange;
+    background-color:darkgray;
 }
 #ContenidoPagina {
     height:auto;
     width:auto;
     text-align:center;
-    background-color:green;
+    background-color:darkseagreen;
 }
 #PiePagina {
     height:50px;
     width:auto;
-    background-color:yellow;
+    background-color:darksalmon;
 }

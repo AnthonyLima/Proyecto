@@ -27,7 +27,7 @@
         <div id="ContenidoPagina">
             <%--<iframe src="PaginaContenido/WebLogin.aspx"></iframe>--%>
             <%--<asp:PlaceHolder ID="PagContent" runat="server" />--%>
-            <asp:Panel ID="PanelContent" runat="server"></asp:Panel>
+            <asp:Panel ID="PanelContent" runat="server" Height="100%" Width="100%"></asp:Panel>
         </div>
         <div id="PiePagina">
 

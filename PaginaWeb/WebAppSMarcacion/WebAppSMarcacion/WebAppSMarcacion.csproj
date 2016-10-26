@@ -70,8 +70,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="PaginaOpciones\Opciones01.aspx" />
-    <Content Include="PaginaOpciones\Opciones1.html" />
+    <Content Include="Paginas\PaginaUsuarios.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebFormSUsuario.aspx" />
   </ItemGroup>
@@ -90,12 +89,12 @@
     <Compile Include="PaginaContenido\WebLogin.aspx.designer.cs">
       <DependentUpon>WebLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PaginaOpciones\Opciones01.aspx.cs">
-      <DependentUpon>Opciones01.aspx</DependentUpon>
+    <Compile Include="Paginas\PaginaUsuarios.aspx.cs">
+      <DependentUpon>PaginaUsuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PaginaOpciones\Opciones01.aspx.designer.cs">
-      <DependentUpon>Opciones01.aspx</DependentUpon>
+    <Compile Include="Paginas\PaginaUsuarios.aspx.designer.cs">
+      <DependentUpon>PaginaUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\WcfSMarcacion\Reference.cs">
