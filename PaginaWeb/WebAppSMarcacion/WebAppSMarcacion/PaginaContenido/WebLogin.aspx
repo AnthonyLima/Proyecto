@@ -9,9 +9,8 @@
     <link href="../Estilo/EstiloContenidoPag.css" rel="stylesheet" />
 </head>
 <body style="height:auto;width:auto;text-align:center;">
-    <form id="form1" runat="server">
-    <div>
-    <div>
+    <form id="form1" runat="server" style="height:100%;width:100%;">
+        <div>
             <asp:Label Text="Nombre: " runat="server" />
             
             <asp:TextBox ID="txtNombre" runat="server" />
@@ -27,7 +26,6 @@
         <div>
             <asp:Label ID="lblRespuesta" Text="" runat="server" />
         </div>
-    </div>
     </form>
 </body>
 </html>

@@ -13,7 +13,8 @@ namespace WebAppSMarcacion
         protected void Page_Load(object sender, EventArgs e)
         {
             //PagContent.Controls.Add(new LiteralControl("<iframe src=\"" +nombrePagina +"\"></iframe><br />"));
-            PanelContent.Controls.Add(new LiteralControl("<iframe src=\"" + nombrePagina + "\"></iframe><br />"));
+            PanelContent.Visible = true;
+            PanelContent.Controls.Add(new LiteralControl("<iframe src=\"" + nombrePagina + "\" Width=\""+80+"%\"></iframe><br />"));
         }
     }
 }
