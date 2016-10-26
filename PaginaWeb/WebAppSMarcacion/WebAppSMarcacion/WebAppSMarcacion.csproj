@@ -72,7 +72,6 @@
     </None>
     <Content Include="Paginas\PaginaUsuarios.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebFormSUsuario.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="default.aspx.cs">
@@ -101,13 +100,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="WebFormSUsuario.aspx.cs">
-      <DependentUpon>WebFormSUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebFormSUsuario.aspx.designer.cs">
-      <DependentUpon>WebFormSUsuario.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
