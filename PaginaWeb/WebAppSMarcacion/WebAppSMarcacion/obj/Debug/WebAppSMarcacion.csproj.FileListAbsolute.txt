@@ -9,3 +9,9 @@ D:\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\bin\WebAppSMarcacion.pdb
 D:\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.csprojResolveAssemblyReference.cache
 D:\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.dll
 D:\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.pdb
+D:\Aplicaciones Distribuidas\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\bin\WebAppSMarcacion.dll.config
+D:\Aplicaciones Distribuidas\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\bin\WebAppSMarcacion.dll
+D:\Aplicaciones Distribuidas\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\bin\WebAppSMarcacion.pdb
+D:\Aplicaciones Distribuidas\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.csprojResolveAssemblyReference.cache
+D:\Aplicaciones Distribuidas\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.dll
+D:\Aplicaciones Distribuidas\Proyecto\PaginaWeb\WebAppSMarcacion\WebAppSMarcacion\obj\Debug\WebAppSMarcacion.pdb

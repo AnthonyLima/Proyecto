@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace WebAppSMarcacion {
+namespace WebAppSMarcacion.Paginas {
     
     
-    public partial class _default {
+    public partial class PaginaUsuarios {
         
         /// <summary>
         /// Control form1.
