@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <div id="CabeceraPagina">
-            
+            <asp:Image runat="server" />
         </div>
         <div id="OpcionesPagina">
             <asp:Menu runat="server" Orientation="Horizontal">

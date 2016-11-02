@@ -17,7 +17,7 @@
         <div id="OpcionesPagina">
             <asp:Menu runat="server" Orientation="Horizontal">
                 <Items>
-                    <asp:MenuItem Text="dato1"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Paginas/PaginaUsuarios.aspx" Text="dato1"></asp:MenuItem>
                     <asp:MenuItem Text="dato2"></asp:MenuItem>
                     <asp:MenuItem Text="dato3"></asp:MenuItem>
                     <asp:MenuItem Text="dato4"></asp:MenuItem>

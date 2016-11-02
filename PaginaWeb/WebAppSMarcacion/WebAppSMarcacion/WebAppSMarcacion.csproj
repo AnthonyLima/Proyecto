@@ -63,6 +63,9 @@
     <Content Include="default.aspx" />
     <Content Include="Estilo\EstiloContenidoPag.css" />
     <Content Include="Estilo\EstiloDefaultPag.css" />
+    <Content Include="Imagen\imagen01.jpg" />
+    <Content Include="Imagen\imagen02.jpg" />
+    <Content Include="PaginaContenido\contenidoEmpleados.aspx" />
     <Content Include="PaginaContenido\WebInicio.aspx" />
     <Content Include="PaginaContenido\WebLogin.aspx" />
     <None Include="Service References\WcfSMarcacion\configuration91.svcinfo" />
@@ -71,6 +74,8 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Paginas\PaginaInformacion.aspx" />
+    <Content Include="Paginas\PaginaRecursosHumanos.aspx" />
     <Content Include="Paginas\PaginaUsuarios.aspx" />
     <Content Include="Paginas\WebEmpleados.aspx" />
     <Content Include="Web.config" />
@@ -82,6 +87,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaContenido\contenidoEmpleados.aspx.cs">
+      <DependentUpon>contenidoEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaContenido\contenidoEmpleados.aspx.designer.cs">
+      <DependentUpon>contenidoEmpleados.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaContenido\WebInicio.aspx.cs">
       <DependentUpon>WebInicio.aspx</DependentUpon>
@@ -96,6 +108,20 @@
     </Compile>
     <Compile Include="PaginaContenido\WebLogin.aspx.designer.cs">
       <DependentUpon>WebLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PaginaInformacion.aspx.cs">
+      <DependentUpon>PaginaInformacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PaginaInformacion.aspx.designer.cs">
+      <DependentUpon>PaginaInformacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PaginaRecursosHumanos.aspx.cs">
+      <DependentUpon>PaginaRecursosHumanos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PaginaRecursosHumanos.aspx.designer.cs">
+      <DependentUpon>PaginaRecursosHumanos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\PaginaUsuarios.aspx.cs">
       <DependentUpon>PaginaUsuarios.aspx</DependentUpon>
@@ -151,9 +177,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\WcfSMarcacion\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Imagen\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
