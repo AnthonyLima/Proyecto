@@ -22,7 +22,7 @@
                     <asp:MenuItem Text="dato3"></asp:MenuItem>
                     <asp:MenuItem Text="dato4"></asp:MenuItem>
                 </Items>
-            </asp:Menu>    
+            </asp:Menu>
         </div>
         <div id="ContenidoPagina">
             <asp:Panel ID="PanelContent" runat="server" Height="100%" Width="100%"></asp:Panel>
