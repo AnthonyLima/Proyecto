@@ -63,6 +63,7 @@
     <Content Include="default.aspx" />
     <Content Include="Estilo\EstiloContenidoPag.css" />
     <Content Include="Estilo\EstiloDefaultPag.css" />
+    <Content Include="PaginaContenido\WebInicio.aspx" />
     <Content Include="PaginaContenido\WebLogin.aspx" />
     <None Include="Service References\WcfSMarcacion\configuration91.svcinfo" />
     <None Include="Service References\WcfSMarcacion\configuration.svcinfo" />
@@ -71,6 +72,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Paginas\PaginaUsuarios.aspx" />
+    <Content Include="Paginas\WebEmpleados.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +82,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaContenido\WebInicio.aspx.cs">
+      <DependentUpon>WebInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaContenido\WebInicio.aspx.designer.cs">
+      <DependentUpon>WebInicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaContenido\WebLogin.aspx.cs">
       <DependentUpon>WebLogin.aspx</DependentUpon>
@@ -94,6 +103,13 @@
     </Compile>
     <Compile Include="Paginas\PaginaUsuarios.aspx.designer.cs">
       <DependentUpon>PaginaUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WebEmpleados.aspx.cs">
+      <DependentUpon>WebEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WebEmpleados.aspx.designer.cs">
+      <DependentUpon>WebEmpleados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\WcfSMarcacion\Reference.cs">

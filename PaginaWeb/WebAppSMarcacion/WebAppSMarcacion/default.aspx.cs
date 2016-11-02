@@ -9,13 +9,11 @@ namespace WebAppSMarcacion
 {
     public partial class _default : System.Web.UI.Page
     {
-        string nombrePagina = "PaginaContenido/WebLogin.aspx";
+        string nombrePagina = "PaginaContenido/WebInicio.aspx";
         protected void Page_Load(object sender, EventArgs e)
         {
-            //PagContent.Controls.Add(new LiteralControl("<iframe src=\"" +nombrePagina +"\"></iframe><br />"));
             PanelContent.Visible = true;
             PanelContent.Controls.Add(new LiteralControl("<iframe src=\"" + nombrePagina + "\"></iframe><br />"));
-            //PanelContent.Controls.Add(new LiteralControl("<iframe src=\"" + nombrePagina + "\" Width=\"" + 100 + "%\"></iframe><br />"));
         }
     }
 }

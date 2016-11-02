@@ -16,7 +16,7 @@
         <div id="OpcionesPagina">
             <asp:Menu runat="server" Orientation="Horizontal">
                 <Items>
-                    <asp:MenuItem Text="empleados"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Paginas/PaginaUsuarios.aspx" Text="empleados"></asp:MenuItem>
                     <asp:MenuItem Text="Recursos Humanos"></asp:MenuItem>
                     <asp:MenuItem Text="Administracion"></asp:MenuItem>
                     <asp:MenuItem Text="Informacion"></asp:MenuItem>
@@ -24,8 +24,6 @@
             </asp:Menu> 
         </div>
         <div id="ContenidoPagina">
-            <%--<iframe src="PaginaContenido/WebLogin.aspx"></iframe>--%>
-            <%--<asp:PlaceHolder ID="PagContent" runat="server" />--%>
             <asp:Panel ID="PanelContent" runat="server" Height="100%" Width="100%" HorizontalAlign="Center"></asp:Panel>
         </div>
         <div id="PiePagina">
