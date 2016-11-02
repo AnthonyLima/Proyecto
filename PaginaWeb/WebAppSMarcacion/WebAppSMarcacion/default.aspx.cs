@@ -14,6 +14,13 @@ namespace WebAppSMarcacion
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
+                if (Session("CodigoUsuario") == "")
+                {
+                    Response.Redirect("PaginaUsuarios.aspx");
+                }
+            }
             //if (IsPostBack == false)
             //{
             //    if (Session("CodigoUsuario") == "")
@@ -26,8 +33,8 @@ namespace WebAppSMarcacion
             //    }
             //}
 
-            PanelContent.Visible = true;
-            PanelContent.Controls.Add(new LiteralControl("<iframe src=\"" + nombrePagina + "\" runat=\"server\"></iframe><br />"));
+            //PanelContent.Visible = true;
+            //PanelContent.Controls.Add(new LiteralControl("<iframe src=\"" + nombrePagina + "\" runat=\"server\"></iframe><br />"));
         }
     }
 }

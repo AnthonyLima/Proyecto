@@ -14,7 +14,7 @@ namespace WebAppSMarcacion.Paginas
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            //if(Session("CodigoUsuario") == "")
+            //if (Session("CodigoUsuario") == "")
             //{ }
             PanelContent.Visible = true;
             PanelContent.Controls.Add(new LiteralControl("<iframe src=\"" + nombrePagina + "\" runat=\"server\"></iframe><br />"));

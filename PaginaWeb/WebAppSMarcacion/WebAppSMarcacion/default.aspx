@@ -26,7 +26,19 @@
         <div id="ContenidoPagina">
             <%-- aqui se debe mejorar no utilizar un ingreso o login si desea entrar ya entrara --%>
             <%-- pero no debe poder ingresar a empleados recursos humanos o mas hasta logearse --%>
-            <asp:Panel ID="PanelContent" runat="server" Height="100%" Width="100%" HorizontalAlign="Center"></asp:Panel>
+            <%-- debe quietarse el iframe y panelcontent por que no servira con session --%>
+
+            <%--<asp:Panel ID="PanelContent" runat="server" Height="100%" Width="100%" HorizontalAlign="Center"></asp:Panel>--%>
+            <table style="width:908px">
+                <tr style="width:auto">
+                    <td style="width:25%">
+
+                    </td>
+                    <td style="width:75%">
+
+                    </td>
+                </tr>
+            </table>
         </div>
         <div id="PiePagina">
 
