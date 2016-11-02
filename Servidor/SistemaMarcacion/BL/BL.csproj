@@ -39,6 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL_GTabla.cs" />
+    <Compile Include="BL_MEntidad.cs" />
+    <Compile Include="BL_MHora.cs" />
+    <Compile Include="BL_MHorarioGeneral.cs" />
+    <Compile Include="BL_MIdentificador.cs" />
+    <Compile Include="BL_MMarcacion.cs" />
+    <Compile Include="BL_MPermiso.cs" />
+    <Compile Include="BL_MTolerancia.cs" />
+    <Compile Include="BL_MTrabajador.cs" />
     <Compile Include="BL_Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
