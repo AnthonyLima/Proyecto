@@ -24,6 +24,8 @@
             </asp:Menu> 
         </div>
         <div id="ContenidoPagina">
+            <%-- aqui se debe mejorar no utilizar un ingreso o login si desea entrar ya entrara --%>
+            <%-- pero no debe poder ingresar a empleados recursos humanos o mas hasta logearse --%>
             <asp:Panel ID="PanelContent" runat="server" Height="100%" Width="100%" HorizontalAlign="Center"></asp:Panel>
         </div>
         <div id="PiePagina">

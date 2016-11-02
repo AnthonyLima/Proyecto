@@ -25,6 +25,8 @@ namespace WebAppSMarcacion.PaginaOpciones
             if (UserTemp.CodigoUsuario != 0)
             {
                 lblRespuesta.Text = "Usuario: " + UserTemp.Nombre + "; Clave: " + UserTemp.Clave;
+                Session.Add("CodigoUsuario", UserTemp.CodigoUsuario);
+                Response.Redirect("WebInicio.aspx");
             }
         }
 

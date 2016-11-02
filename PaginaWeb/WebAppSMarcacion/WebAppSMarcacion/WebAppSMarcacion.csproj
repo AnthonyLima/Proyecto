@@ -177,7 +177,10 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\WcfSMarcacion\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="PaginaContenido\ContenidoEmpleados\" />
+    <Folder Include="PaginaContenido\ContenidoRH\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
