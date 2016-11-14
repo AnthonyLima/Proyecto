@@ -65,19 +65,14 @@
     <Content Include="Estilo\EstiloDefaultPag.css" />
     <Content Include="Imagen\imagen01.jpg" />
     <Content Include="Imagen\imagen02.jpg" />
-    <Content Include="PaginaContenido\contenidoEmpleados.aspx" />
-    <Content Include="PaginaContenido\WebInicio.aspx" />
-    <Content Include="PaginaContenido\WebLogin.aspx" />
+    <Content Include="Imagen\imagesPrincipalTrabajo.jpg" />
     <None Include="Service References\WcfSMarcacion\configuration91.svcinfo" />
     <None Include="Service References\WcfSMarcacion\configuration.svcinfo" />
     <None Include="Service References\WcfSMarcacion\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Paginas\PaginaInformacion.aspx" />
-    <Content Include="Paginas\PaginaRecursosHumanos.aspx" />
-    <Content Include="Paginas\PaginaUsuarios.aspx" />
-    <Content Include="Paginas\WebEmpleados.aspx" />
+    <Content Include="PaginasEmpleados\WebInicio.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -88,54 +83,12 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PaginaContenido\contenidoEmpleados.aspx.cs">
-      <DependentUpon>contenidoEmpleados.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PaginaContenido\contenidoEmpleados.aspx.designer.cs">
-      <DependentUpon>contenidoEmpleados.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="PaginaContenido\WebInicio.aspx.cs">
+    <Compile Include="PaginasEmpleados\WebInicio.aspx.cs">
       <DependentUpon>WebInicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PaginaContenido\WebInicio.aspx.designer.cs">
+    <Compile Include="PaginasEmpleados\WebInicio.aspx.designer.cs">
       <DependentUpon>WebInicio.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="PaginaContenido\WebLogin.aspx.cs">
-      <DependentUpon>WebLogin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PaginaContenido\WebLogin.aspx.designer.cs">
-      <DependentUpon>WebLogin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\PaginaInformacion.aspx.cs">
-      <DependentUpon>PaginaInformacion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\PaginaInformacion.aspx.designer.cs">
-      <DependentUpon>PaginaInformacion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\PaginaRecursosHumanos.aspx.cs">
-      <DependentUpon>PaginaRecursosHumanos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\PaginaRecursosHumanos.aspx.designer.cs">
-      <DependentUpon>PaginaRecursosHumanos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\PaginaUsuarios.aspx.cs">
-      <DependentUpon>PaginaUsuarios.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\PaginaUsuarios.aspx.designer.cs">
-      <DependentUpon>PaginaUsuarios.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\WebEmpleados.aspx.cs">
-      <DependentUpon>WebEmpleados.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\WebEmpleados.aspx.designer.cs">
-      <DependentUpon>WebEmpleados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\WcfSMarcacion\Reference.cs">
@@ -178,8 +131,8 @@
     <WCFMetadataStorage Include="Service References\WcfSMarcacion\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="PaginaContenido\ContenidoEmpleados\" />
-    <Folder Include="PaginaContenido\ContenidoRH\" />
+    <Folder Include="PaginasAdmin\" />
+    <Folder Include="PaginasRH\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

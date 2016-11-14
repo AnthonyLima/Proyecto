@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <div id="CabeceraPagina">
-            <asp:Image runat="server" />
+            <asp:Image  runat="server" />
         </div>
         <div id="OpcionesPagina">
             <asp:Menu runat="server" Orientation="Horizontal">
@@ -24,18 +24,35 @@
             </asp:Menu> 
         </div>
         <div id="ContenidoPagina">
-            <%-- aqui se debe mejorar no utilizar un ingreso o login si desea entrar ya entrara --%>
-            <%-- pero no debe poder ingresar a empleados recursos humanos o mas hasta logearse --%>
-            <%-- debe quietarse el iframe y panelcontent por que no servira con session --%>
-
-            <%--<asp:Panel ID="PanelContent" runat="server" Height="100%" Width="100%" HorizontalAlign="Center"></asp:Panel>--%>
             <table style="width:908px">
                 <tr style="width:auto">
                     <td style="width:25%">
-
+                        <table>
+                                <tr>
+                                    <td>
+                                        <asp:Label Text="Usuario: " runat="server"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Label Text="Clave: " runat="server" />
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="txtClave" runat="server"></asp:TextBox>
+                                    </td>
+                                </tr>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Button ID="btnLogin" Text="ingresar" runat="server" OnClick="btnLogin_Click" />
+                            </tr>
+                        </table>
                     </td>
                     <td style="width:75%">
-
+                        <%--<asp:PlaceHolder ID="PanelContent" runat="server" />--%>
                     </td>
                 </tr>
             </table>

@@ -1,6 +1,12 @@
 ﻿body {
     
 }
+Image {
+    position:absolute;
+}
+div {
+    text-align:left;
+}
 iframe{
     width:100%;
     height:auto;

@@ -7,3 +7,4 @@ D:\Proyecto\Servidor\SistemaMarcacion\BC\bin\Debug\BC.pdb
 D:\Proyecto\Servidor\SistemaMarcacion\BC\obj\Debug\BC.csprojResolveAssemblyReference.cache
 D:\Proyecto\Servidor\SistemaMarcacion\BC\obj\Debug\BC.dll
 D:\Proyecto\Servidor\SistemaMarcacion\BC\obj\Debug\BC.pdb
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BC\obj\Debug\BC.csprojResolveAssemblyReference.cache

@@ -24,3 +24,5 @@ D:\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\bin\Debug\BGlobal.pdb
 D:\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\obj\Debug\WcfSMarcacion.csprojResolveAssemblyReference.cache
 D:\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\obj\Debug\WcfSMarcacion.dll
 D:\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\obj\Debug\WcfSMarcacion.pdb
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\bin\Debug\BGlobal.dll
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\WcfSMarcacion\bin\Debug\BGlobal.pdb

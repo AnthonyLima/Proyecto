@@ -18,3 +18,5 @@ D:\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\BGlobal.pdb
 D:\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 D:\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.dll
 D:\Proyecto\Servidor\SistemaMarcacion\BL\obj\Debug\BL.pdb
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\BGlobal.dll
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\BL\bin\Debug\BGlobal.pdb

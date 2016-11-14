@@ -45,4 +45,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="BuscarUsuarioPorCodigoUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCodigoUsuario" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarUsuarioPorCodigoUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BC" minOccurs="0" name="BuscarUsuarioPorCodigoUsuarioResult" nillable="true" type="q4:SCUsuarios" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

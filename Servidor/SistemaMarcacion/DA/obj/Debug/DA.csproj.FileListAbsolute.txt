@@ -14,3 +14,5 @@ D:\Proyecto\Servidor\SistemaMarcacion\DA\bin\Debug\BGlobal.pdb
 D:\Proyecto\Servidor\SistemaMarcacion\DA\obj\Debug\DA.csprojResolveAssemblyReference.cache
 D:\Proyecto\Servidor\SistemaMarcacion\DA\obj\Debug\DA.dll
 D:\Proyecto\Servidor\SistemaMarcacion\DA\obj\Debug\DA.pdb
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\DA\bin\Debug\BGlobal.dll
+E:\ANTHONY\githubTrabajos\Proyecto\Servidor\SistemaMarcacion\DA\bin\Debug\BGlobal.pdb
