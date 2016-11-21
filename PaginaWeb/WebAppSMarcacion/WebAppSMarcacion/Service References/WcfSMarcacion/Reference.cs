@@ -87,7 +87,7 @@ namespace WebAppSMarcacion.WcfSMarcacion {
         private string ClaveField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CodigoUsuarioField;
+        private int CodigoUsuariosField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NombreField;
@@ -116,14 +116,14 @@ namespace WebAppSMarcacion.WcfSMarcacion {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CodigoUsuario {
+        public int CodigoUsuarios {
             get {
-                return this.CodigoUsuarioField;
+                return this.CodigoUsuariosField;
             }
             set {
-                if ((this.CodigoUsuarioField.Equals(value) != true)) {
-                    this.CodigoUsuarioField = value;
-                    this.RaisePropertyChanged("CodigoUsuario");
+                if ((this.CodigoUsuariosField.Equals(value) != true)) {
+                    this.CodigoUsuariosField = value;
+                    this.RaisePropertyChanged("CodigoUsuarios");
                 }
             }
         }

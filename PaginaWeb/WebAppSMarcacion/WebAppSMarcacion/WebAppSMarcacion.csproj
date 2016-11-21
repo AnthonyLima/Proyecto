@@ -72,7 +72,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="PaginasAdmin\WebInicioAdm.aspx" />
     <Content Include="PaginasEmpleados\WebInicio.aspx" />
+    <Content Include="PaginasEmpleados\WebMarcaciones.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,12 +85,26 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PaginasAdmin\WebInicioAdm.aspx.cs">
+      <DependentUpon>WebInicioAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasAdmin\WebInicioAdm.aspx.designer.cs">
+      <DependentUpon>WebInicioAdm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PaginasEmpleados\WebInicio.aspx.cs">
       <DependentUpon>WebInicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="PaginasEmpleados\WebInicio.aspx.designer.cs">
       <DependentUpon>WebInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasEmpleados\WebMarcaciones.aspx.cs">
+      <DependentUpon>WebMarcaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasEmpleados\WebMarcaciones.aspx.designer.cs">
+      <DependentUpon>WebMarcaciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\WcfSMarcacion\Reference.cs">
@@ -131,7 +147,6 @@
     <WCFMetadataStorage Include="Service References\WcfSMarcacion\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="PaginasAdmin\" />
     <Folder Include="PaginasRH\" />
   </ItemGroup>
   <PropertyGroup>

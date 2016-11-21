@@ -3,7 +3,7 @@
   <xs:complexType name="SCUsuarios">
     <xs:sequence>
       <xs:element minOccurs="0" name="Clave" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="CodigoUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="CodigoUsuarios" type="xs:int" />
       <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>

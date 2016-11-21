@@ -39,7 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Da.cs" />
     <Compile Include="DAGTabla.cs" />
     <Compile Include="DAVCGrupos.cs" />
     <Compile Include="DAVCUsuarios.cs" />

@@ -25,11 +25,11 @@ namespace DA
             objetos[0] = sNombre;
             objetos[1] = sClave;
 
-            dtTemp = Conect.Consulta("SelectUsuario", Campos, objetos);
+            dtTemp = Conect.Consulta("PCCUsuarioPorNombreYClave", Campos, objetos);
 
             if (dtTemp.Rows.Count > 0)
             {
-                tempUsuario.CodigoUsuario = int.Parse(dtTemp.Rows[0]["CodigoUsuarios"].ToString());
+                tempUsuario.CodigoUsuarios = int.Parse(dtTemp.Rows[0]["CodigoUsuarios"].ToString());
                 tempUsuario.Nombre = dtTemp.Rows[0]["Nombre"].ToString();
                 tempUsuario.Clave = dtTemp.Rows[0]["Clave"].ToString();
             }
@@ -44,7 +44,7 @@ namespace DA
 
             int Cantidad = 1;
             string[] Campos = new string[Cantidad];
-            Campos[0] = "CodigoUsuario";
+            Campos[0] = "CodigoUsuarios";
             object[] objetos = new object[Cantidad];
             objetos[0] = sCodigoUsuario;
 
@@ -52,7 +52,7 @@ namespace DA
 
             if (dtTemp.Rows.Count > 0)
             {
-                tempUsuario.CodigoUsuario = int.Parse(dtTemp.Rows[0]["CodigoUsuarios"].ToString());
+                tempUsuario.CodigoUsuarios = int.Parse(dtTemp.Rows[0]["CodigoUsuarios"].ToString());
                 tempUsuario.Nombre = dtTemp.Rows[0]["Nombre"].ToString();
                 tempUsuario.Clave = dtTemp.Rows[0]["Clave"].ToString();
             }

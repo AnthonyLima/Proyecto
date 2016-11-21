@@ -14,23 +14,28 @@ namespace WebAppSMarcacion.PaginasEmpleados
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (Session["CodigoUsuarios"] != null)
             {
-                //ejecutandoce por primera vez
-                Response.Redirect("..");
+                //si existe informacion de un codigo de usuario
+                CargarUsuario(Session["CodigoUsuarios"].ToString().Trim());
             }
             else
             {
-                CargarUsuario(Session["CodigoUsuario"].ToString());
-                if (usuario != null)
-                    txtNombre.Text = usuario.Nombre;
+                //regresar al menu principal
+                Response.Redirect("..");
 
             }
         }
 
         private void CargarUsuario(string sCodigoUsuario)
         {
+            usuario = new WcfSMarcacion.SCUsuarios();
             usuario = servicio.BuscarUsuarioPorCodigoUsuario(int.Parse(sCodigoUsuario));
+
+            if (usuario.CodigoUsuarios > 0)
+            {
+                txtNombre.Text = usuario.Nombre;
+            }
         }
     }
 }

@@ -7,17 +7,17 @@ namespace BC
 {
     public class SCUsuarios
     {
-        private int _CodigoUsuario;
+        private int _CodigoUsuarios;
         private string _Nombre;
         private string _Clave;
 
-        public int CodigoUsuario { get { return _CodigoUsuario; } set { _CodigoUsuario = value; } }
+        public int CodigoUsuarios { get { return _CodigoUsuarios; } set { _CodigoUsuarios = value; } }
         public string Nombre { get { return _Nombre; } set { _Nombre = value; } }
         public string Clave { get { return _Clave; } set { _Clave = value; } }
 
         public SCUsuarios()
         {
-            CodigoUsuario = 0;
+            CodigoUsuarios = 0;
             Nombre = string.Empty;
             Clave = string.Empty;
         }

@@ -7,7 +7,7 @@ namespace BL
 {
     public class BL_Usuarios
     {
-        DA.Da DATemp = new DA.Da();
+        DA.DAVCUsuarios DATemp = new DA.DAVCUsuarios();
 
         #region busqueda de usuario
         public BC.SCUsuarios BuscarUsuario(string sNombre, string sClave)

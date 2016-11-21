@@ -17,15 +17,13 @@ namespace WebAppSMarcacion
         {
             if (!IsPostBack)
             {
-                //ejecutandoce por primera vez
-                if (Session["CodigoUsuario"] == "")
+                //ejecucion por segunda vez
+                if (Session["CodigoUsuarios"] != null)
                 {
-                    Response.Redirect("..");
+                    //si existe un usuario encontrado
+                    //se debe ademas verficar a que grupo pertenece y si tiene permisos
+                    Response.Redirect("/PaginasEmpleados/WebInicio.aspx");
                 }
-            }
-            if (IsPostBack)
-            {
-                Response.Redirect("/PaginasEmpleados/WebInicio.aspx");
             }
 
             //PanelContent.Visible = true;
@@ -39,8 +37,10 @@ namespace WebAppSMarcacion
 
             if (Usuario != null)
             {
-                Session.Add("CodigoUsuario", Usuario.CodigoUsuario);
+                Session.Add("CodigoUsuarios", Usuario.CodigoUsuarios);
+                Session.Timeout = 30;
             }
+            Response.Redirect(".");
         }
     }
 }
