@@ -16,10 +16,10 @@
         <div id="OpcionesPagina">
             <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
                 <Items>
-                    <asp:MenuItem Text="Usuarios"></asp:MenuItem>
-                    <asp:MenuItem Text="Grupos"></asp:MenuItem>
-                    <asp:MenuItem Text="Permisos"></asp:MenuItem>
-                    <asp:MenuItem Text="Informacion"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/PaginasAdmin/WebCrearUsuarios.aspx" Text="Usuarios"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/PaginasAdmin/WebMantGrupos.aspx" Text="Grupos"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/PaginasAdmin/WebPermisos.aspx" Text="Permisos"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/PaginasAdmin/WebInfoMiCuenta.aspx" Text="Informacion"></asp:MenuItem>
                 </Items>
             </asp:Menu> 
         </div>

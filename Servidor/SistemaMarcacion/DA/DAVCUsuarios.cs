@@ -11,7 +11,7 @@ namespace DA
     {
         private BGlobal.Global Conect = new BGlobal.Global();
 
-        #region Buscar usario por nombre y usuario
+        #region Buscar usuario por nombre y usuario
         public BC.SCUsuarios BuscarUsuario(string sNombre, string sClave)
         {
             BC.SCUsuarios tempUsuario = new BC.SCUsuarios();
@@ -37,6 +37,7 @@ namespace DA
         }
         #endregion
 
+        #region Buscar usuario por codigo usuarios
         public BC.SCUsuarios pcUsuarioPorCodigoUsuario(int sCodigoUsuario)
         {
             BC.SCUsuarios tempUsuario = new BC.SCUsuarios();
@@ -58,5 +59,23 @@ namespace DA
             }
             return tempUsuario;
         }
+        #endregion
+
+        #region CrearUsuario
+        public bool PICrearUsuario(string sNombreUsuario)
+        {
+            bool estado = false;
+
+            int Cantidad = 1;
+            string[] Campos = new string[Cantidad];
+            Campos[0] = "Nombre";
+            object[] objetos = new object[Cantidad];
+            objetos[0] = sNombreUsuario;
+
+            estado = Conect.IDU("PCIUsuario", Campos, objetos);
+
+            return estado;
+        }
+        #endregion
     }
 }

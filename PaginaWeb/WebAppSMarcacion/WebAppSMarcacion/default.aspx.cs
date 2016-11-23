@@ -22,7 +22,7 @@ namespace WebAppSMarcacion
                 {
                     //si existe un usuario encontrado
                     //se debe ademas verficar a que grupo pertenece y si tiene permisos
-                    Response.Redirect("/PaginasEmpleados/WebInicio.aspx");
+                    Response.Redirect("/PaginasAdmin/WebInicioAdm.aspx");
                 }
             }
 

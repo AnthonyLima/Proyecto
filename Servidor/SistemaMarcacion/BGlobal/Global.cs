@@ -47,7 +47,9 @@ namespace BGlobal
             }
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cn.Open();
-            cmd.Parameters.AddWithValue("@return", "false");
+            //parametro agregado cuando se realiza el insert, update o delete par averificar que se completo la accion o no
+            //se puede agregar el usuario a futuro pero este dato no retornara
+            cmd.Parameters.AddWithValue("@return", 1);
             cmd.Parameters["@return"].Direction = System.Data.ParameterDirection.ReturnValue;
             cmd.ExecuteNonQuery();
             if (cmd.Parameters["@return"].Value.ToString() == "1")

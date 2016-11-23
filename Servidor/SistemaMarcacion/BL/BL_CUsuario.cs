@@ -24,5 +24,10 @@ namespace BL
             UserTemp = DATemp.pcUsuarioPorCodigoUsuario(sCodigoUsuario);
             return UserTemp;
         }
+
+        public bool CrearUsuario(string sNombreUsuario)
+        {
+            return DATemp.PICrearUsuario(sNombreUsuario);
+        }
     }
 }

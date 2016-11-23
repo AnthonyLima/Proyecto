@@ -39,5 +39,11 @@ namespace WcfSMarcacion
             BL.BL_CUsuario BLUserTemp = new BL.BL_CUsuario();
             return BLUserTemp.BusquedaUsuarioPorCodigo(sCodigoUsuario);
         }
+
+        public bool CrearUsuario(string sNombreUsuario)
+        {
+            BL.BL_CUsuario BLUserTemp = new BL.BL_CUsuario();
+            return BLUserTemp.CrearUsuario(sNombreUsuario);
+        }
     }
 }

@@ -14,10 +14,10 @@ namespace WebAppSMarcacion.PaginasAdmin
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["CodigoUsuario"] != "")
+            if (Session["CodigoUsuarios"] != null)
             {
-                //ya se encontro a la persona
-                CargarUsuario(Session["CodigoUsuario"].ToString().Trim());
+                //si existe informacion de un codigo de usuario
+                CargarUsuario(Session["CodigoUsuarios"].ToString().Trim());
             }
             else
             {

@@ -72,7 +72,11 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="PaginasAdmin\WebCrearUsuarios.aspx" />
+    <Content Include="PaginasAdmin\WebInfoMiCuenta.aspx" />
     <Content Include="PaginasAdmin\WebInicioAdm.aspx" />
+    <Content Include="PaginasAdmin\WebMantGrupos.aspx" />
+    <Content Include="PaginasAdmin\WebPermisos.aspx" />
     <Content Include="PaginasEmpleados\WebInicio.aspx" />
     <Content Include="PaginasEmpleados\WebMarcaciones.aspx" />
     <Content Include="Web.config" />
@@ -85,12 +89,40 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PaginasAdmin\WebCrearUsuarios.aspx.cs">
+      <DependentUpon>WebCrearUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasAdmin\WebCrearUsuarios.aspx.designer.cs">
+      <DependentUpon>WebCrearUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasAdmin\WebInfoMiCuenta.aspx.cs">
+      <DependentUpon>WebInfoMiCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasAdmin\WebInfoMiCuenta.aspx.designer.cs">
+      <DependentUpon>WebInfoMiCuenta.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PaginasAdmin\WebInicioAdm.aspx.cs">
       <DependentUpon>WebInicioAdm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="PaginasAdmin\WebInicioAdm.aspx.designer.cs">
       <DependentUpon>WebInicioAdm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasAdmin\WebMantGrupos.aspx.cs">
+      <DependentUpon>WebMantGrupos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasAdmin\WebMantGrupos.aspx.designer.cs">
+      <DependentUpon>WebMantGrupos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasAdmin\WebPermisos.aspx.cs">
+      <DependentUpon>WebPermisos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasAdmin\WebPermisos.aspx.designer.cs">
+      <DependentUpon>WebPermisos.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginasEmpleados\WebInicio.aspx.cs">
       <DependentUpon>WebInicio.aspx</DependentUpon>

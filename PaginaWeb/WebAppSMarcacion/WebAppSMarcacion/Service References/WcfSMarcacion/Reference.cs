@@ -166,6 +166,9 @@ namespace WebAppSMarcacion.WcfSMarcacion {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/BuscarUsuarioPorCodigoUsuario", ReplyAction="http://tempuri.org/IService1/BuscarUsuarioPorCodigoUsuarioResponse")]
         WebAppSMarcacion.WcfSMarcacion.SCUsuarios BuscarUsuarioPorCodigoUsuario(int sCodigoUsuario);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/CrearUsuario", ReplyAction="http://tempuri.org/IService1/CrearUsuarioResponse")]
+        bool CrearUsuario(string sNombreUsuario);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -209,6 +212,10 @@ namespace WebAppSMarcacion.WcfSMarcacion {
         
         public WebAppSMarcacion.WcfSMarcacion.SCUsuarios BuscarUsuarioPorCodigoUsuario(int sCodigoUsuario) {
             return base.Channel.BuscarUsuarioPorCodigoUsuario(sCodigoUsuario);
+        }
+        
+        public bool CrearUsuario(string sNombreUsuario) {
+            return base.Channel.CrearUsuario(sNombreUsuario);
         }
     }
 }

@@ -23,6 +23,9 @@ namespace WcfSMarcacion
         [OperationContract]
         BC.SCUsuarios BuscarUsuarioPorCodigoUsuario(int sCodigoUsuario);
 
+        [OperationContract]
+        bool CrearUsuario(string sNombreUsuario);
+
         // TODO: agregue aquí sus operaciones de servicio
     }
 
