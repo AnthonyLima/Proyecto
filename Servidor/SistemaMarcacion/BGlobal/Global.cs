@@ -16,22 +16,48 @@ namespace BGlobal
         public DataTable Consulta(string sNombreProc, string[] Campos, object[] Objetos)
         {
             DataTable dtLista = new DataTable();
-
-            cmd.Connection = cn;
-            cmd.CommandText = sNombreProc;
-
-            for (int i = 0; i < Campos.Length; i++)
-            {
-                cmd.Parameters.AddWithValue("@" + Campos[i], Objetos[i]);
-            }
-            cmd.CommandType = System.Data.CommandType.StoredProcedure;
             SqlDataReader dr;
-            cn.Open();
-            dr = cmd.ExecuteReader();
-            dtLista.Load(dr);
-            cn.Close();
-            return dtLista;
+            //---------------------------------------------
+            using (cn)
+            {
+                cmd.Connection = cn;
+                cmd.CommandText = sNombreProc;
+                
+                SqlTransaction tran = cn.BeginTransaction();
+                try
+                {
+                    for (int i = 0; i < Campos.Length; i++)
+                    {
+                        cmd.Parameters.AddWithValue("@" + Campos[i], Objetos[i]);
+                    }
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cn.Open();
+                    dr = cmd.ExecuteReader();
+                    dtLista.Load(dr);
+                    return dtLista;
+                }
+                catch (Exception)
+                {
+                    dtLista = new DataTable();
+                    throw;
+                }
+            } 
+                //---------------------------------------------
+            //    cmd.Connection = cn;
+            //cmd.CommandText = sNombreProc;
+
+            //for (int i = 0; i < Campos.Length; i++)
+            //{
+            //    cmd.Parameters.AddWithValue("@" + Campos[i], Objetos[i]);
+            //}
+            //cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            //SqlDataReader dr;
+            //cn.Open();
+            //dr = cmd.ExecuteReader();
+            //dtLista.Load(dr);
             //cn.Close();
+            //return dtLista;
+            ////cn.Close();
         }
         #endregion
 
@@ -86,7 +112,7 @@ namespace BGlobal
             //parametro agregado cuando se realiza el insert, update o delete par averificar que se completo la accion o no
             //se puede agregar el usuario a futuro pero este dato no retornara
             cmd.Parameters.AddWithValue("@return", 1);
-            cmd.Parameters["@return"].Direction = System.Data.ParameterDirection.ReturnValue;
+            cmd.Parameters["@return"].Direction = ParameterDirection.ReturnValue;
             cmd.ExecuteNonQuery();
             if (cmd.Parameters["@return"].Value.ToString() == "1")
             {
