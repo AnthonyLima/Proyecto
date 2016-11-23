@@ -11,6 +11,29 @@ namespace DA
     {
         private BGlobal.Global Conect = new BGlobal.Global();
 
+        #region Encontrar Grupo Del Usuario
+        public BC.SCGrupos pcGrupoDelUsuario(int sCodigoUsuario)
+        {
+            BC.SCGrupos tempGrupo = new BC.SCGrupos();
+            DataTable dtTemp = new DataTable();
+
+            int Cantidad = 1;
+            string[] Campos = new string[Cantidad];
+            Campos[0] = "CodigoUsuario";
+            object[] objetos = new object[Cantidad];
+            objetos[0] = sCodigoUsuario;
+
+            dtTemp = Conect.Consulta("PCCUsuarioPorNombreYClave", Campos, objetos);
+
+            if (dtTemp.Rows.Count > 0)
+            {
+                tempGrupo.CodigoGrupo = int.Parse(dtTemp.Rows[0]["CodigoGrupo"].ToString());
+                tempGrupo.Nombre = dtTemp.Rows[0]["Nombre"].ToString();
+            }
+            return tempGrupo;
+        }
+        #endregion
+
         #region Buscar usuario por nombre y usuario
         public BC.SCUsuarios BuscarUsuario(string sNombre, string sClave)
         {

@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace WebAppSMarcacion.PaginasAdmin {
+namespace WebAppSMarcacion.PaginasRH {
     
     
-    public partial class WebMantGrupos {
+    public partial class WebRHTrabajadores {
         
         /// <summary>
         /// Control form1.
@@ -46,15 +46,6 @@ namespace WebAppSMarcacion.PaginasAdmin {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombre;
-        
-        /// <summary>
-        /// Control btnCrearGrupo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCrearGrupo;
+        protected global::System.Web.UI.WebControls.Label txtNombre;
     }
 }

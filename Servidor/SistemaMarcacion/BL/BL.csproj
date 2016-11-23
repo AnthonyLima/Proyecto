@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL_CGrupo.cs" />
     <Compile Include="BL_CUsuario.cs" />
     <Compile Include="BL_GTabla.cs" />
     <Compile Include="BL_MEntidad.cs" />

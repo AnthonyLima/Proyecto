@@ -79,6 +79,8 @@
     <Content Include="PaginasAdmin\WebPermisos.aspx" />
     <Content Include="PaginasEmpleados\WebInicio.aspx" />
     <Content Include="PaginasEmpleados\WebMarcaciones.aspx" />
+    <Content Include="PaginasRH\WebRHInicio.aspx" />
+    <Content Include="PaginasRH\WebRHTrabajadores.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +140,20 @@
     <Compile Include="PaginasEmpleados\WebMarcaciones.aspx.designer.cs">
       <DependentUpon>WebMarcaciones.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PaginasRH\WebRHInicio.aspx.cs">
+      <DependentUpon>WebRHInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasRH\WebRHInicio.aspx.designer.cs">
+      <DependentUpon>WebRHInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasRH\WebRHTrabajadores.aspx.cs">
+      <DependentUpon>WebRHTrabajadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasRH\WebRHTrabajadores.aspx.designer.cs">
+      <DependentUpon>WebRHTrabajadores.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\WcfSMarcacion\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -178,9 +194,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\WcfSMarcacion\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PaginasRH\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

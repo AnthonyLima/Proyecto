@@ -10,7 +10,7 @@ namespace DA
     {
         private BGlobal.Global Conect = new BGlobal.Global();
 
-        private BC.SCGrupos BuscarGrupo(int sCodigoGrupo)
+        public BC.SCGrupos BuscarGrupo(int sCodigoGrupo)
         {
             BC.SCGrupos tempGrupo = new BC.SCGrupos();
             DataTable dtTemp = new DataTable();
@@ -29,6 +29,21 @@ namespace DA
                 tempGrupo.Nombre = dtTemp.Rows[1]["Npmbre"].ToString();
             }
             return tempGrupo;
+        }
+
+        public bool pcIGrupo(string sNombre)
+        {
+            bool temp = false;
+
+            int Cantidad = 1;
+            string[] Campos = new string[Cantidad];
+            Campos[0] = "Nombre";
+            object[] objetos = new object[Cantidad];
+            objetos[0] = sNombre;
+
+            temp = Conect.IDU("PCIGrupo", Campos, objetos);
+
+            return temp;
         }
 
     }
