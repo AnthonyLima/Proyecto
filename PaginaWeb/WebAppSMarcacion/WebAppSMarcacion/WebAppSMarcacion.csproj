@@ -79,6 +79,8 @@
     <Content Include="PaginasAdmin\WebPermisos.aspx" />
     <Content Include="PaginasEmpleados\WebInicio.aspx" />
     <Content Include="PaginasEmpleados\WebMarcaciones.aspx" />
+    <Content Include="PaginasRH\WebRHCrearHorario.aspx" />
+    <Content Include="PaginasRH\WebRHCrearHoras.aspx" />
     <Content Include="PaginasRH\WebRHInicio.aspx" />
     <Content Include="PaginasRH\WebRHTrabajadores.aspx" />
     <Content Include="Web.config" />
@@ -139,6 +141,20 @@
     </Compile>
     <Compile Include="PaginasEmpleados\WebMarcaciones.aspx.designer.cs">
       <DependentUpon>WebMarcaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasRH\WebRHCrearHorario.aspx.cs">
+      <DependentUpon>WebRHCrearHorario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasRH\WebRHCrearHorario.aspx.designer.cs">
+      <DependentUpon>WebRHCrearHorario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasRH\WebRHCrearHoras.aspx.cs">
+      <DependentUpon>WebRHCrearHoras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasRH\WebRHCrearHoras.aspx.designer.cs">
+      <DependentUpon>WebRHCrearHoras.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginasRH\WebRHInicio.aspx.cs">
       <DependentUpon>WebRHInicio.aspx</DependentUpon>

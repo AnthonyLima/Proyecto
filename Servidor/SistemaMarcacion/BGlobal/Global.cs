@@ -41,6 +41,42 @@ namespace BGlobal
             cmd.Connection = cn;
             cmd.CommandText = sNombreProc;
 
+            //-----------------------------------------------
+            //using (cn)
+            //{
+            //    cmd.Connection = cn;
+            //    cmd.CommandText = sNombreProc;
+
+            //    SqlTransaction tran = cn.BeginTransaction();
+
+            //    cmd.Transaction = tran;
+
+            //    try
+            //    {
+            //        for (int i = 0; i < Campos.Length; i++)
+            //        {
+            //            cmd.Parameters.AddWithValue("@" + Campos[i], Objetos[i]);
+            //        }
+            //        cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            //        cn.Open();
+
+            //        cmd.Parameters.AddWithValue("@return", "1");
+            //        cmd.Parameters["@return"].Direction = System.Data.ParameterDirection.ReturnValue;
+            //        cmd.ExecuteNonQuery();
+
+            //        tran.Commit();
+            //        return System.Data.ParameterDirection.ReturnValue.ToString();
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        return ex.Message;
+            //        throw;
+            //    }
+            //    //se podria cambiar a string para mostrar cuando tenga datos y cuando no tenga estara en blanco el error
+            //    //esto solo se utilizara en las operaiones de insert,update,delete
+            //}
+            //-----------------------------------------------
+
             for (int i = 0; i < Campos.Length; i++)
             {
                 cmd.Parameters.AddWithValue("@" + Campos[i], Objetos[i]);

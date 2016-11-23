@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebRHTrabajadores.aspx.cs" Inherits="WebAppSMarcacion.PaginasRH.WebRHTrabajadores" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebRHCrearHoras.aspx.cs" Inherits="WebAppSMarcacion.PaginasRH.WebRHCrearHoras" %>
 
 <!DOCTYPE html>
 
@@ -16,10 +16,11 @@
         <div id="OpcionesPagina">
             <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
                 <Items>
-                    <asp:MenuItem Text="Marcaciones"></asp:MenuItem>
-                    <asp:MenuItem Text="Permisos"></asp:MenuItem>
-                    <asp:MenuItem Text="horarios de trabajo"></asp:MenuItem>
-                    <asp:MenuItem Text="Informacion"></asp:MenuItem>
+                    <asp:MenuItem Text="Mantenimiento Trabajadores"></asp:MenuItem>
+                    <asp:MenuItem Text="Crear Horas de trabajo"></asp:MenuItem>
+                    <asp:MenuItem Text="Creacion Horario de trabajo"></asp:MenuItem>
+                    <asp:MenuItem Text="Visualizar Marcaciones"></asp:MenuItem>
+                    <asp:MenuItem Text="Creacion Permisos"></asp:MenuItem>
                 </Items>
             </asp:Menu> 
         </div>
@@ -40,37 +41,18 @@
                     </td>
                     <td style="width:75%">
                         <div>
-                            <asp:Label Text="Nombre: " runat="server" />
+                            <asp:Label Text="Hora Entrada: " runat="server" />
+                            <asp:Timer runat="server"></asp:Timer>
                         </div>
                         <div>
-                            <asp:Label Text="Apellido Paterno: " runat="server" />
+                            <asp:Label Text="Hora Salida" runat="server" />
+                            <asp:Timer runat="server"></asp:Timer>
                         </div>
                         <div>
-                            <asp:Label Text="Apellido Materno: " runat="server" />
+                            <asp:Button Text="Crear Hora de Trabajo" runat="server" />
                         </div>
                         <div>
-                            <asp:Label Text="DNI: " runat="server" />
-                        </div>
-                        <div>
-                            <asp:Label Text="Telefono: " runat="server" />
-                        </div>
-                        <div>
-                            <asp:Label Text="Email: " runat="server" />
-                        </div>
-                        <div>
-                            <asp:Label Text="Categoria: " runat="server" />
-                        </div>
-                        <div>
-                            <asp:Label Text="Cargo: " runat="server" />
-                        </div>
-                        <div>
-                            <asp:Label Text="Area: " runat="server" />
-                        </div>
-                        <div>
-                            <asp:Button Text="Crear Trabajador" runat="server" />
-                        </div>
-                        <div>
-                            <asp:GridView runat="server"></asp:GridView>
+                            <asp:GridView ID="dtLista" runat="server"></asp:GridView>
                         </div>
                     </td>
                 </tr>
