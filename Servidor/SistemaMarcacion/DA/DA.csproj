@@ -46,6 +46,7 @@
     <Compile Include="DAVMHora.cs" />
     <Compile Include="DAVMHorario.cs" />
     <Compile Include="DAVMHorarioGeneral.cs" />
+    <Compile Include="DAVMIdentificador.cs" />
     <Compile Include="DAVMMarcacion.cs" />
     <Compile Include="DAVMPermiso.cs" />
     <Compile Include="DAVMTrabajador.cs" />

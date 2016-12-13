@@ -11,6 +11,20 @@ namespace DA
     {
         private BGlobal.Global Conect = new BGlobal.Global();
 
+        public DataTable pcUsuarios(int sCodigoUsuario)
+        {
+            DataTable dtTemp = new DataTable();
+            int Cantidad = 1;
+            string[] Campos = new string[Cantidad];
+            Campos[0] = "CodigoUsuario";
+            object[] objetos = new object[Cantidad];
+            objetos[0] = sCodigoUsuario;
+
+            dtTemp = Conect.Consulta("PCCUsuarioPorNombreYClave", Campos, objetos);
+
+            return dtTemp;
+        }
+
         #region Encontrar Grupo Del Usuario
         public BC.SCGrupos pcGrupoDelUsuario(int sCodigoUsuario)
         {

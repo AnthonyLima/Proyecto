@@ -40,21 +40,12 @@ namespace WebAppSMarcacion.PaginasAdmin {
         protected global::System.Web.UI.WebControls.Menu Menu1;
         
         /// <summary>
-        /// Control txtNombre.
+        /// Control dtLista.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombre;
-        
-        /// <summary>
-        /// Control btnCrearGrupo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCrearGrupo;
+        protected global::System.Web.UI.WebControls.GridView dtLista;
     }
 }

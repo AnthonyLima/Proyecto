@@ -8,4 +8,11 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SCUsuarios" nillable="true" type="tns:SCUsuarios" />
+  <xs:complexType name="SCGrupos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoGrupo" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SCGrupos" nillable="true" type="tns:SCGrupos" />
 </xs:schema>

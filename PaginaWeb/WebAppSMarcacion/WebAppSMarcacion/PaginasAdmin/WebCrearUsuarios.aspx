@@ -26,10 +26,11 @@
         <div id="ContenidoPagina">
             <div>
                 <asp:Label Text="Nombre:  " runat="server" />
-                <asp:TextBox ID="txtNombre" runat="server" />
+                <asp:TextBox ID="txtNombre" Text="" runat="server" />
             </div>
             <div>
                 <asp:Button ID="btnCrearUsuario" Text="Crear" runat="server" OnClick="btnCrearUsuario_Click" />
+                <asp:Label ID="lbRespond" Text="" runat="server" />
             </div>
         </div>
         <div id="PiePagina">

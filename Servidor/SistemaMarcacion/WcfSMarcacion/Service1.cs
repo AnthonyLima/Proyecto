@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Data;
 
 namespace WcfSMarcacion
 {
@@ -45,5 +46,38 @@ namespace WcfSMarcacion
             BL.BL_CUsuario BLUserTemp = new BL.BL_CUsuario();
             return BLUserTemp.CrearUsuario(sNombreUsuario);
         }
+
+        public DataSet BuscarTodosUsuarios()
+        {
+            BL.BL_CUsuario blUserTemp = new BL.BL_CUsuario();
+            DataSet dsTemp = new DataSet();
+            DataTable dtTabla = new DataTable();
+
+            dtTabla = blUserTemp.BLPCUsuarioTodos();
+            dsTemp.Tables.Add(dtTabla);
+
+            return dsTemp;
+        }
+
+        #region procesos de grupo
+        public BC.SCGrupos BuscarUnGrupo(int sCodigoGrupos)
+        {
+            BL.BL_CGrupo BLGrupoTemp = new BL.BL_CGrupo();
+            return BLGrupoTemp.BLPCUnGrupo(sCodigoGrupos);
+        }
+
+
+        public DataSet BuscarTodosGrupo()
+        {
+            BL.BL_CGrupo BlGrupoTemp = new BL.BL_CGrupo();
+
+            DataSet dsTemp = new DataSet();
+            DataTable dtTabla = new DataTable();
+            dtTabla = BlGrupoTemp.BlPCGrupoTodos();
+            dsTemp.Tables.Add(dtTabla);
+
+            return dsTemp;
+        }
+        #endregion
     }
 }

@@ -17,7 +17,7 @@ namespace DA
             int Cantidad = 2;
             string[] Campos = new string[Cantidad];
             Campos[0] = "CodigoHora";
-            Campos[1] = "Dias";
+            Campos[1] = "Dia";
             object[] Objetos = new object[Cantidad];
             Objetos[0] = sCodigoHora;
             Objetos[1] = sDias;

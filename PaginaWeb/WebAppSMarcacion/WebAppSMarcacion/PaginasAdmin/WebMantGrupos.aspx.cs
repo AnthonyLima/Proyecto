@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace WebAppSMarcacion.PaginasAdmin
 {
@@ -11,6 +12,7 @@ namespace WebAppSMarcacion.PaginasAdmin
     {
         WcfSMarcacion.Service1Client servicio = new WcfSMarcacion.Service1Client();
         WcfSMarcacion.SCUsuarios usuario = new WcfSMarcacion.SCUsuarios();
+        WcfSMarcacion.SCGrupos Grupos = new WcfSMarcacion.SCGrupos();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,6 +20,7 @@ namespace WebAppSMarcacion.PaginasAdmin
             {
                 //si existe informacion de un codigo de usuario
                 CargarUsuario(Session["CodigoUsuarios"].ToString().Trim());
+                CargarLista();
             }
             else
             {
@@ -32,10 +35,14 @@ namespace WebAppSMarcacion.PaginasAdmin
             //se debe convertir de un string a integer
             usuario = new WcfSMarcacion.SCUsuarios();
             usuario = servicio.BuscarUsuarioPorCodigoUsuario(int.Parse(sCodigoUsuario));
-            if (usuario.CodigoUsuarios > 0)
-            {
-                txtNombre.Text = usuario.Nombre;
-            }
+        }
+
+        private void CargarLista()
+        {
+            DataSet ds = new DataSet();
+            ds = servicio.BuscarTodosGrupo();
+            dtLista.DataSource = ds;
+            dtLista.DataBind();
         }
 
         protected void btnCrearGrupo_Click(object sender, EventArgs e)

@@ -32,19 +32,20 @@ namespace WebAppSMarcacion.PaginasAdmin
             //se debe convertir de un string a integer
             usuario = new WcfSMarcacion.SCUsuarios();
             usuario = servicio.BuscarUsuarioPorCodigoUsuario(int.Parse(sCodigoUsuario));
-            if (usuario.CodigoUsuarios > 0)
-            {
-                txtNombre.Text = usuario.Nombre;
-            }
         }
 
         protected void btnCrearUsuario_Click(object sender, EventArgs e)
         {
+            string dato = txtNombre.Text.Trim();
             bool temp = false;
-            temp = servicio.CrearUsuario(txtNombre.Text.Trim());
+            temp = servicio.CrearUsuario(dato);
             if (temp)
             {
-                Response.Write("<script>window.open('WebCrearUsuarios.aspx','popup','width=800,height=500') </script>");
+                Response.Redirect(Request.RawUrl);
+            }
+            else
+            {
+                lbRespond.Text = "no se logro crear el usuario";
             }
         }
     }

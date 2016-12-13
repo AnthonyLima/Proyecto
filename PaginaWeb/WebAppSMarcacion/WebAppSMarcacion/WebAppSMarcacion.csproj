@@ -66,6 +66,8 @@
     <Content Include="Imagen\imagen01.jpg" />
     <Content Include="Imagen\imagen02.jpg" />
     <Content Include="Imagen\imagesPrincipalTrabajo.jpg" />
+    <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Service References\WcfSMarcacion\configuration91.svcinfo" />
     <None Include="Service References\WcfSMarcacion\configuration.svcinfo" />
     <None Include="Service References\WcfSMarcacion\Reference.svcmap">
@@ -188,6 +190,9 @@
     <None Include="Service References\WcfSMarcacion\service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\WcfSMarcacion\service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\WcfSMarcacion\WcfSMarcacion.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -195,6 +200,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Service References\WcfSMarcacion\WebAppSMarcacion.WcfSMarcacion.SCUsuarios.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WcfSMarcacion\WebAppSMarcacion.WcfSMarcacion.SCGrupos.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">

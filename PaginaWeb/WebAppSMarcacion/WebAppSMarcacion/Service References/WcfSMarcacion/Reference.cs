@@ -151,6 +151,67 @@ namespace WebAppSMarcacion.WcfSMarcacion {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SCGrupos", Namespace="http://schemas.datacontract.org/2004/07/BC")]
+    [System.SerializableAttribute()]
+    public partial class SCGrupos : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CodigoGrupoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NombreField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CodigoGrupo {
+            get {
+                return this.CodigoGrupoField;
+            }
+            set {
+                if ((this.CodigoGrupoField.Equals(value) != true)) {
+                    this.CodigoGrupoField = value;
+                    this.RaisePropertyChanged("CodigoGrupo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nombre {
+            get {
+                return this.NombreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NombreField, value) != true)) {
+                    this.NombreField = value;
+                    this.RaisePropertyChanged("Nombre");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WcfSMarcacion.IService1")]
     public interface IService1 {
@@ -169,6 +230,15 @@ namespace WebAppSMarcacion.WcfSMarcacion {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/CrearUsuario", ReplyAction="http://tempuri.org/IService1/CrearUsuarioResponse")]
         bool CrearUsuario(string sNombreUsuario);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/BuscarTodosUsuarios", ReplyAction="http://tempuri.org/IService1/BuscarTodosUsuariosResponse")]
+        System.Data.DataSet BuscarTodosUsuarios();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/BuscarUnGrupo", ReplyAction="http://tempuri.org/IService1/BuscarUnGrupoResponse")]
+        WebAppSMarcacion.WcfSMarcacion.SCGrupos BuscarUnGrupo(int sCodigoGrupos);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/BuscarTodosGrupo", ReplyAction="http://tempuri.org/IService1/BuscarTodosGrupoResponse")]
+        System.Data.DataSet BuscarTodosGrupo();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -216,6 +286,18 @@ namespace WebAppSMarcacion.WcfSMarcacion {
         
         public bool CrearUsuario(string sNombreUsuario) {
             return base.Channel.CrearUsuario(sNombreUsuario);
+        }
+        
+        public System.Data.DataSet BuscarTodosUsuarios() {
+            return base.Channel.BuscarTodosUsuarios();
+        }
+        
+        public WebAppSMarcacion.WcfSMarcacion.SCGrupos BuscarUnGrupo(int sCodigoGrupos) {
+            return base.Channel.BuscarUnGrupo(sCodigoGrupos);
+        }
+        
+        public System.Data.DataSet BuscarTodosGrupo() {
+            return base.Channel.BuscarTodosGrupo();
         }
     }
 }

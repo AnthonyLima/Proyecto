@@ -31,7 +31,7 @@
                         <table id=" informacion">
                             <tr>
                                 <td>
-                                    <asp:Label Text="Nombre: " runat="server"></asp:Label>
+                                    <asp:Label ID="Label1" Text="Nombre: " runat="server"></asp:Label>
                                 </td>
                                 <td>
                                     <asp:Label ID="txtNombre" Text="" runat="server"></asp:Label>
@@ -41,40 +41,61 @@
                     </td>
                     <td style="width:75%">
                         <div>
-                            <asp:Label Text="Trabajador" runat="server" />
+                            <asp:Label ID="Label2" Text="Trabajador" runat="server" />
                             <div>
-                                <asp:TextBox Text="Ingrese nombre" runat="server" />
-                                <asp:Button Text="Buscar Trabajador" runat="server" />
+                                <asp:TextBox ID="TextBox1" Text="Ingrese nombre" runat="server" />
+                                <asp:Button ID="Button1" Text="Buscar Trabajador" runat="server" />
                             </div>
                             <div>
-                                <asp:Label Text="Nombre: " runat="server" />
+                                <asp:Label ID="Label3" Text="Nombre: " runat="server" />
                             </div>
                             <div>
-                                <asp:Label Text="Area: " runat="server" />
+                                <asp:Label ID="Label4" Text="Area: " runat="server" />
                             </div>
                         </div>
                         <div>
-                            <asp:Label Text="Horario de trabajo" runat="server" />
+                            <asp:Label ID="Label5" Text="Horario de trabajo" runat="server" />
                             <div>
-                                <asp:Label Text="Hora de trabajo: " runat="server" />
-                                <asp:DropDownList runat="server">
+                                <asp:Label ID="Label6" Text="Hora de trabajo: " runat="server" />
+                                <asp:DropDownList ID="DropDownList1" runat="server">
                                     <asp:ListItem Text="text1" />
                                     <asp:ListItem Text="text2" />
                                 </asp:DropDownList>
                             </div>
                            <div>
-                               <asp:Label Text="Dias" runat="server" />
+                               <asp:Label ID="Label7" Text="Dias" runat="server" />
                                <div>
                                    <div>
-                                        <asp:Label Text="Domingo" runat="server" />
-                                       <asp:CheckBox runat="server" />
+                                        <asp:Label ID="Label8" Text="Domingo" runat="server" />
+                                       <asp:CheckBox ID="cbDomingo" runat="server" />
                                    </div>
-                                   <asp:Label Text="Lunes" runat="server" />
-                                   <asp:Label Text="Martes" runat="server" />
-                                   <asp:Label Text="Miercoles" runat="server" />
+                                   <div>
+                                       <asp:Label ID="Label9" Text="Lunes" runat="server" />
+                                       <asp:CheckBox ID="cbLunes" runat="server" />
+                                   </div>
+                                   <div>
+                                       <asp:Label ID="Label10" Text="Martes" runat="server" />
+                                       <asp:CheckBox ID="cbMartes" runat="server" />
+                                   </div>
+                                   <div>
+                                       <asp:Label ID="Label11" Text="Miercoles" runat="server" />
+                                       <asp:CheckBox ID="cbMiercoles" runat="server" />
+                                   </div>
+                                   <div>
+                                       <asp:Label ID="Label12" Text="jueves" runat="server" />
+                                       <asp:CheckBox ID="cbJueves" runat="server" />
+                                   </div>
+                                   <div>
+                                       <asp:Label ID="Label13" Text="viernes" runat="server" />
+                                       <asp:CheckBox ID="cbViernes" runat="server" />
+                                   </div>
+                                   <div>
+                                       <asp:Label ID="Label14" Text="sabado" runat="server" />
+                                       <asp:CheckBox ID="cbSabado" runat="server" />
+                                   </div>
                                </div>
                                <div>
-
+                                   <asp:Button ID="btnCrear" Text="Crear Horario" runat="server" />
                                </div>
                            </div>
                         </div>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 
 namespace BL
 {
@@ -17,6 +18,13 @@ namespace BL
             return UserTemp;
         }
         #endregion
+
+        public DataTable BLPCUsuarioTodos()
+        {
+            DataTable dtTemp = new DataTable();
+            dtTemp = DATemp.pcUsuarios(0);
+            return dtTemp;
+        }
 
         public BC.SCUsuarios BusquedaUsuarioPorCodigo(int sCodigoUsuario)
         {

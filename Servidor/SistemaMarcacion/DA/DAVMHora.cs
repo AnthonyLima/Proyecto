@@ -31,13 +31,15 @@ namespace DA
 
             int Cantidad = 3;
             string[] Campos = new string[Cantidad];
-            Campos[0] = "HoraEntrada";
-            Campos[1] = "HoraSalida";
-            Campos[2] = "HorarioNocturno";
+            Campos[0] = "Dia";
+            Campos[1] = "HoraEntrada";
+            Campos[2] = "HoraSalida";
+            Campos[3] = "HorarioNocturno";
             object[] Objetos = new object[Cantidad];
-            Objetos[0] = sVMHora.HoraEntrada;
-            Objetos[1] = sVMHora.HoraSalida;
-            Objetos[2] = sVMHora.HorarioNocturno;
+            Objetos[0] = sVMHora.Dia;
+            Objetos[1] = sVMHora.HoraEntrada;
+            Objetos[2] = sVMHora.HoraSalida;
+            Objetos[3] = sVMHora.HorarioNocturno;
 
             temp = conect.IDU("MPIHora", Campos, Objetos);
 

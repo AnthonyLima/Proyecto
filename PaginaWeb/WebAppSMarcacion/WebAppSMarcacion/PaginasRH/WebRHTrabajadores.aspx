@@ -40,37 +40,54 @@
                     </td>
                     <td style="width:75%">
                         <div>
-                            <asp:Label Text="Nombre: " runat="server" />
+                            <asp:Label ID="Label1" Text="Nombre: " runat="server" />
+                            <asp:TextBox ID="TextBox1" runat="server" />
                         </div>
                         <div>
-                            <asp:Label Text="Apellido Paterno: " runat="server" />
+                            <asp:Label ID="Label2" Text="Apellido Paterno: " runat="server" />
+                            <asp:TextBox ID="txtApellidoPaterno" runat="server" />
                         </div>
                         <div>
-                            <asp:Label Text="Apellido Materno: " runat="server" />
+                            <asp:Label ID="Label3" Text="Apellido Materno: " runat="server" />
+                            <asp:TextBox ID="txtApellidoMaterno" runat="server" />
                         </div>
                         <div>
-                            <asp:Label Text="DNI: " runat="server" />
+                            <asp:Label ID="Label4" Text="DNI: " runat="server" />
+                            <asp:TextBox ID="txtDNI" runat="server" />
                         </div>
                         <div>
-                            <asp:Label Text="Telefono: " runat="server" />
+                            <asp:Label ID="Label5" Text="Telefono: " runat="server" />
+                            <asp:TextBox ID="txtTelefono" runat="server" />
                         </div>
                         <div>
-                            <asp:Label Text="Email: " runat="server" />
+                            <asp:Label ID="Label6" Text="Email: " runat="server" />
+                            <asp:TextBox ID="txtEmail" runat="server" />
                         </div>
                         <div>
-                            <asp:Label Text="Categoria: " runat="server" />
+                            <asp:Label ID="Label7" Text="Categoria: " runat="server" />
+                            <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
                         </div>
                         <div>
-                            <asp:Label Text="Cargo: " runat="server" />
+                            <asp:Label ID="Label8" Text="Cargo: " runat="server" />
+                            <asp:DropDownList ID="DropDownList2" runat="server"></asp:DropDownList>
                         </div>
                         <div>
-                            <asp:Label Text="Area: " runat="server" />
+                            <asp:Label ID="Label9" Text="Area: " runat="server" />
+                            <asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList>
                         </div>
                         <div>
-                            <asp:Button Text="Crear Trabajador" runat="server" />
+                            <asp:Button ID="Button1" Text="Crear Trabajador" runat="server" />
                         </div>
                         <div>
-                            <asp:GridView runat="server"></asp:GridView>
+                            <asp:GridView ID="dtLista" AutoGenerateColumns="false" runat="server">
+                                <Columns>
+                                    <asp:BoundField DataField="CodigoTrabajador" HeaderText="Codigo" />
+                                    <asp:BoundField DataField="NombreCompleto" HeaderText="Nombre Completo" />
+                                    <asp:BoundField DataField="NombreCategoria" HeaderText="Categoria" />
+                                    <asp:BoundField DataField="NombreArea" HeaderText="Area" />
+                                    <asp:BoundField DataField="NombreCargo" HeaderText="Cargo" />
+                                </Columns>
+                            </asp:GridView>
                         </div>
                     </td>
                 </tr>

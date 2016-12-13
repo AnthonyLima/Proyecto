@@ -25,11 +25,12 @@
         </div>
         <div id="ContenidoPagina">
             <div>
-                <asp:Label Text="Nombre:  " runat="server" />
-                <asp:TextBox ID="txtNombre" runat="server" />
-            </div>
-            <div>
-                <asp:Button ID="btnCrearGrupo" Text="Crear" runat="server" OnClick="btnCrearGrupo_Click" />
+                <asp:GridView ID="dtLista" runat="server" AutoGenerateColumns="false">
+                    <Columns>
+                        <asp:BoundField Datafield="CodigoGrupos" HtmlEncode="false" HeaderText="Codigo" />
+                        <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
+                    </Columns>
+                </asp:GridView>
             </div>
         </div>
         <div id="PiePagina">

@@ -41,15 +41,27 @@
                     </td>
                     <td style="width:75%">
                         <div>
-                            <asp:Label Text="Hora Entrada: " runat="server" />
-                            <asp:Timer runat="server"></asp:Timer>
+                            <asp:Label ID="Label1" Text="Hora Entrada: " runat="server" />
+                            <asp:Timer ID="Timer1" runat="server"></asp:Timer>
                         </div>
                         <div>
-                            <asp:Label Text="Hora Salida" runat="server" />
-                            <asp:Timer runat="server"></asp:Timer>
+                            <asp:Label ID="Label2" Text="Hora Salida" runat="server" />
+                            <asp:Timer ID="Timer2" runat="server"></asp:Timer>
                         </div>
+                        <%--<div>
+                            <asp:Label Text="Dia" runat="server" />
+                            <asp:DropDownList ID="ddlDia" runat="server">
+                                <asp:ListItem Text="Domingo" />
+                                <asp:ListItem Text="Lunes" />
+                                <asp:ListItem Text="Martes" />
+                                <asp:ListItem Text="Miercoles" />
+                                <asp:ListItem Text="Jueves" />
+                                <asp:ListItem Text="Viernes" />
+                                <asp:ListItem Text="Sabado" />
+                            </asp:DropDownList>
+                        </div>--%>
                         <div>
-                            <asp:Button Text="Crear Hora de Trabajo" runat="server" />
+                            <asp:Button ID="Button1" Text="Crear Hora de Trabajo" runat="server" />
                         </div>
                         <div>
                             <asp:GridView ID="dtLista" runat="server"></asp:GridView>

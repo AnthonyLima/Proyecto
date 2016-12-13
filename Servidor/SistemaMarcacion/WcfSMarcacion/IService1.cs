@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Data;
 
 namespace WcfSMarcacion
 {
@@ -26,6 +27,17 @@ namespace WcfSMarcacion
         [OperationContract]
         bool CrearUsuario(string sNombreUsuario);
 
+        [OperationContract]
+        DataSet BuscarTodosUsuarios();
+
+
+        #region servicios de grupos
+        [OperationContract]
+        BC.SCGrupos BuscarUnGrupo(int sCodigoGrupos);
+
+        [OperationContract]
+        DataSet BuscarTodosGrupo();
+        #endregion
         // TODO: agregue aquí sus operaciones de servicio
     }
 

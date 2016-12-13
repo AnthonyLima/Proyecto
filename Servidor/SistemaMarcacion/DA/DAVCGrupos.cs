@@ -10,9 +10,8 @@ namespace DA
     {
         private BGlobal.Global Conect = new BGlobal.Global();
 
-        public BC.SCGrupos BuscarGrupo(int sCodigoGrupo)
+        public DataTable PCGrupo(int sCodigoGrupo)
         {
-            BC.SCGrupos tempGrupo = new BC.SCGrupos();
             DataTable dtTemp = new DataTable();
 
             int Cantidad = 1;
@@ -21,14 +20,10 @@ namespace DA
             object[] objetos = new object[Cantidad];
             objetos[0] = sCodigoGrupo;
 
-            dtTemp = Conect.Consulta("SelectUsuario", Campos, objetos);
+            dtTemp = Conect.Consulta("PCCGrupos", Campos, objetos);
 
-            if (dtTemp.Rows.Count > 0)
-            {
-                tempGrupo.CodigoGrupo = int.Parse(dtTemp.Rows[0]["CodigoUsuario"].ToString());
-                tempGrupo.Nombre = dtTemp.Rows[1]["Npmbre"].ToString();
-            }
-            return tempGrupo;
+            
+            return dtTemp;
         }
 
         public bool pcIGrupo(string sNombre)
